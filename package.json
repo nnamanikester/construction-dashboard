@@ -1,0 +1,25 @@
+{
+  "name": "construction-dashboard",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nnamanikester/construction-dashboard.git"
+  },
+  "author": "Whitegod/Kester",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nnamanikester/construction-dashboard/issues"
+  },
+  "homepage": "https://github.com/nnamanikester/construction-dashboard#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "node-sass": "^4.14.1",
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {}
+}
