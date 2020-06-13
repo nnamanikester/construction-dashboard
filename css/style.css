@@ -24,6 +24,35 @@ body {
   height: 7.5rem;
   background-color: #ffffff;
   box-shadow: 0 0.75rem 1.5rem rgba(18, 38, 63, 0.03); }
+  .header .nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .header .nav-header__d-flex {
+      display: flex; }
+    .header .nav-header__brand {
+      flex: 0 0 25rem;
+      font-size: 2.8rem;
+      padding: 2rem 1.5rem;
+      text-align: center;
+      color: #ffffff;
+      background-color: #2a3042; }
+    .header .nav-header__form {
+      position: relative;
+      flex: 0 0 35rem;
+      padding: 2rem 1.5rem; }
+    .header .nav-header__search {
+      border: none;
+      width: 80%;
+      padding: 1rem 1.5rem;
+      background-color: #f3f3f9;
+      border-radius: 3rem; }
+    .header .nav-header .bx-search-alt {
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-size: 1.4rem; }
 
 .content {
   display: flex; }
@@ -31,3 +60,5 @@ body {
     flex: 0 0 25rem;
     height: calc(100vh - 75px);
     background-color: #2a3042; }
+  .content__main-content {
+    flex: 1; }
