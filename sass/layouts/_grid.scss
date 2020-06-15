@@ -3,47 +3,6 @@
   height: 7.5rem;
   background-color: $color-white;
   box-shadow: $box-shadow;
-
-  .nav-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    &__d-flex {
-      display: flex;
-    }
-
-    &__brand{
-      flex: 0 0 25rem;
-      font-size: 2.8rem;
-      padding: 2rem 1.5rem;
-      text-align: center;
-      color: $color-white;
-      background-color: $color-darkblue;
-    }
-
-    &__form {
-      position: relative;
-      flex: 0 0 35rem;
-      padding: 2rem 1.5rem;
-    }
-
-    &__search {
-      border: none;
-      width: 80%;
-      padding: 1rem 1.5rem;
-      background-color: #f3f3f9;
-      border-radius: 3rem
-    }
-
-    .bx-search-alt {
-      display: inline-block;
-      position: absolute;
-      top: 0;
-      right: 0;
-      font-size: 1.4rem;
-    }
-  }
 }
 
 
@@ -54,9 +13,14 @@
     flex: 0 0 25rem;
     height: calc(100vh - 75px);
     background-color: $color-darkblue;
+
+    @include respond(tab) {
+      flex: 0 0 10rem;
+    }
   }
 
-  &__main-content {
+  &__main {
     flex: 1;
+    padding: 2rem;
   }
 }

@@ -1,0 +1,114 @@
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__d-flex {
+    display: flex;
+    align-items: center;
+  }
+
+  &__brand{
+    flex: 0 0 25rem;
+    font-size: 2.6rem;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    color: $color-white;
+    background-color: $color-darkblue;
+
+    @include respond(tab) {
+      flex: 0 0 10.5rem;
+    }
+  }
+
+  &__form {
+    position: relative;
+    flex: 0 0 35rem;
+    padding: 2rem 1.5rem;
+
+    @include respond(tab) {
+      display: none;
+    }
+  }
+
+  &__search {
+    border: none;
+    width: 100%;
+    padding: 1rem 1.5rem;
+    background-color: #f3f3f9;
+    border-radius: 3rem;
+
+    &:focus {
+      outline: none;
+    }
+
+    &::placeholder {
+      color: $color-grey;
+      font-size: 1.4rem;
+    }
+  }
+
+  .search-icon {
+    display: inline-block;
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+
+  &__dropdown {
+    flex: 0 0 10rem;
+    font-size: 1.4rem;
+    text-align: center;
+    //padding-top: 2.3rem;
+
+    @include respond(tab) {
+      display: none;
+    }
+  }
+
+  &__customize,
+  &__multiple,
+  &__notification,
+  &__settings {
+    display: inline-block;
+    font-size: 1.8rem;
+    margin-right: 2rem;
+    cursor: pointer;
+  }
+
+  &__searchicon {
+    display: none;
+
+    @include respond(tab) {
+      display: inline-block;
+      font-size: 1.8rem;
+      margin-right: 2rem;
+      cursor: pointer;
+    }
+  }
+
+  &__user {
+    display: inline-block;
+    font-size: 1.4rem;
+    margin-right: 2rem;
+    cursor: pointer;
+  }
+
+  &__user-photo {
+    display: inline-block;
+    width: 3.2rem;
+    height: 3.2rem;
+    cursor: pointer;
+    margin-right: 1rem;
+    border-radius: 50%;
+    background-color: $color-grey-dark;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+    }
+
+  }
+}

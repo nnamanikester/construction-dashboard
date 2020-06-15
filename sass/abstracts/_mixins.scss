@@ -1,0 +1,10 @@
+
+// MEDIA QUERIES MANAGER
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == tab {
+    @media (max-width: 1024px) {
+      @content;
+    }
+  }
+}

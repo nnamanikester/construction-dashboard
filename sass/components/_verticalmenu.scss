@@ -1,0 +1,47 @@
+.content {
+  &__vertical-menu {
+    padding: 2rem;
+  }
+
+  &__vertical-menu-heading {
+    padding: 0 1rem;
+    color: $color-darkerblue;
+    font-size: 1.2rem;
+    font-weight: 500;
+
+    @include respond(tab) {
+      display: none;
+    }
+  }
+
+  &__vertical-menu-list {
+    list-style: none;
+  }
+
+  &__vertical-menu-item {
+    padding: 1.5rem 1rem 2rem;
+
+    .bx {
+      display: inline-block;
+      font-size: 1.8rem;
+      cursor: pointer;
+      color: $color-lightblue;
+      margin-right: 1.5rem;
+      vertical-align: middle;
+
+      @include respond(tab) {margin-left: 1.2rem;}
+    }
+  }
+
+  &__vertical-menu-title {
+    font-size: 1.4rem;
+    cursor: pointer;
+    color: $color-lightblue;
+    vertical-align: middle;
+
+    @include respond(tab) {
+      display: none;
+    }
+  }
+ 
+}
