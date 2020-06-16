@@ -13,7 +13,60 @@
 </head>
 <body>
   <!-- Page begins -->
-  <div class="container">
+  <nav class="nav">
+    <div class="nav__mobile-view">
+
+      <!-- Mobile Hamburger menu toggle bottom -->
+      
+      <label for="toggle"><i class='bx bx-menu'></i></label>
+      <input type="checkbox" id="toggle">
+
+      <!-- Mobile Menu -->
+      <div class="nav__mobile-menu">
+        <h3 class="nav__menu-heading">MENU</h3>
+        <a href="#" class="nav__menu-link">
+          <i class='bx bx-home-circle nav__menu-icon'></i>
+          <span class="nav__menu-title">Dashboard</span>
+        </a>
+        <a href="#" class="nav__menu-link">
+          <i class='bx bx-log-in-circle'></i>
+            <span class="nav__menu-title">Invertory Logging</span>
+        </a>
+        <a href="#" class="nav__menu-link">
+          <i class='bx bxs-report' ></i>
+            <span class="nav__menu-title">Progress Report</span>
+        </a>
+        <a href="#" class="nav__menu-link">
+          <i class='bx bx-task'></i>
+            <span class="nav__menu-title">Store Instructions</span>
+        </a>
+        <a href="#" class="nav__menu-link">
+          <i class='bx bx-share-alt'></i>
+            <span class="nav__menu-title">Share Photos</span>
+        </a>
+        <a href="#" class="nav__menu-link">
+          <i class='bx bx-notepad'></i>
+            <span class="nav__menu-title">Send & Review R.F.I</span>
+        </a>
+        <a href="#" class="nav__menu-link">
+          <i class='bx bx-mobile-landscape'></i>
+            <span class="nav__menu-title">Monitor Invertory</span>
+        </a>
+      </div>
+
+
+      <input type="text" id="search" placeholder="Search" autocomplete="off">
+      
+      <div class="mobile-menu-icon">
+        <label for="search"><i class='bx bx-search-alt' ></i></label>
+         <label class="nav__notification"><i class='bx bx-bell' ></i></label>
+         <label id="user-photo"><img src="img/foto-sushi-6anudmpILw4-unsplash.jpg" alt="user-photo"></label>
+         <label class="nav__settings"><i class='bx bx-cog' ></i></label>
+      </div>
+
+    </div>
+  </nav>
+ <div class="container">
     <header class="header">
       <nav class="nav-header">
        <div class="nav-header__d-flex">
@@ -75,42 +128,36 @@
           </li>
         </ul>
       </nav>
+
       <main class="content__main">
-        <div class="content__main-table-card">
-          <table class="content__main-table">
-            <thead class="content__main-thead">
-              <tr class="content__main-tr">
-                <th class="content__main-th">Title1</th>
-                <th class="content__main-th">Title2</th>
-                <th class="content__main-th">Title3</th>
-                <th class="content__main-th">Title4</th>
-                <th class="content__main-th">Title5</th>
-                <th class="content__main-th">Title6</th>
+        <div class="table-card">
+          <table class="table">
+            <thead class="table__head">
+              <tr class="table__row">
+                <th class="table__col-title">Titile</th>
+                <th class="table__col-title">Titile</th>
+                <th class="table__col-title">Titile</th>
+                <th class="table__col-title">Titile</th>
+                <th class="table__col-title">Titile</th>
+                <th class="table__col-title">Titile</th>
+                <Title></Title>
               </tr>
             </thead>
-            <tbody class="content__main-tbody">
-              <tr class="content__main-tr">
-                <td class="content__main-td">Content1</td>
-                <td class="content__main-td">Content2</td>
-                <td class="content__main-td">Content3</td>
-                <td class="content__main-td">Content4</td>
-                <td class="content__main-td">Content5</td>
-                <td class="content__main-td">Content6</td>
-              </tr>
-
-              <tr class="content__main-tr">
-                <td class="content__main-td">Content1</td>
-                <td class="content__main-td">Content2</td>
-                <td class="content__main-td">Content3</td>
-                <td class="content__main-td">Content4</td>
-                <td class="content__main-td">Content5</td>
-                <td class="content__main-td">Content6</td>  
+            
+            <tbody class="table__body">
+              <tr class="table__row">
+                <td class="table__data">Content</td>
+                <td class="table__data">Content</td>
+                <td class="table__data">Content</td>
+                <td class="table__data">Content</td>
+                <td class="table__data">Content</td>
+                <td class="table__data">Content</td>
               </tr>
             </tbody>
           </table>
         </div>
       </main>
     </div>
-  </div>
+  </div> 
 </body>
 </html>

@@ -2,6 +2,19 @@
 // MEDIA QUERIES MANAGER
 
 @mixin respond($breakpoint) {
+  @if $breakpoint == sm-phone {
+    @media (max-width: 540px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == phone {
+    @media (max-width: 768px) {
+      @content;
+    }
+  }
+
+
   @if $breakpoint == tab {
     @media (max-width: 1024px) {
       @content;

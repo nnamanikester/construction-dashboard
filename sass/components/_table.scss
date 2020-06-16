@@ -1,23 +1,13 @@
-.content__main {
-  &-table {
-    width: 100%;
-    background-color: $color-white;
+.table {
+  width: 100%;
+  background-color: $color-white;
+  border-radius: 0.5rem;
+  box-shadow: $box-shadow;
+
+  &__heading,
+  &__data {
     padding: 1rem;
-    border-radius: 0.5rem;
-    box-shadow: $box-shadow;
-  }
-
-  &-tr {
-    display: table-row;
-  }
-  
-  &-th,
-  &-td {
-    border: 1px soild #eff2f7;
-    color: $color-grey-dark;
-    padding: 1rem;
-    text-align: initial;
-  }
-
-
+    border: 1px solid $color-lightblue;
+    border-collapse: collapse;
+    }
 }

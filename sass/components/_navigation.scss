@@ -1,7 +1,129 @@
+.nav {
+  // position: relative;
+
+  &__mobile-view {
+    display: none;
+
+    #toggle {
+      display: none;
+    }
+
+    #search {
+      display: none;
+      //display: block;
+      font-size: 1.8rem;
+      position: absolute;
+      padding: 1rem 1.5rem;
+      top: 7.5rem;
+      width: 90%;
+      margin: 0 auto;
+      border: 1px solid $color-lightblue;
+      border-radius: 0.5rem;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    label {
+      display: inline-block;
+      font-size: 3.2rem;
+      margin-top: 0.5rem;
+      //text-align: right;
+
+      &:not(:last-child) {
+        margin-right: 3rem
+      }
+    }
+
+    @include respond(phone) {
+      display: block;
+      padding: 1rem;
+      width: 100%;
+      background-color: $color-white;
+      box-shadow: $box-shadow;
+    }
+  }
+
+  &__mobile-menu {
+    display: none;
+    position: absolute;
+    top: 7.2rem;
+    bottom: 0;
+    left: 0;
+    width: 45%;
+    padding: 2rem 1rem;
+    background-color: $color-darkblue;
+    z-index: 1000;
+    overflow: scroll;
+
+    @include respond(sm-phone) {
+      width: 70%;
+    }
+  }
+  
+  #toggle:checked + &__mobile-menu {
+    display: inline-block;
+  }
+
+  &__menu-link {
+    display: block;
+    font-size: 1.6rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    text-decoration: none;
+    color: $color-lightblue;
+
+    i {
+      display: inline-block;
+      margin-right: 1rem;
+    }
+
+    span {
+      display: inline-block;
+    }
+  }
+
+  &__menu-heading {
+    padding: 0 1rem;
+    color: $color-darkerblue;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+
+  #user-photo {
+    display: inline-block;
+    width: 3.2rem;
+    height: 3.2rem;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: $color-grey-dark;
+    overflow: hidden;
+    
+    img {
+      width: 100%;
+     }
+    
+  }
+
+  .mobile-menu-icon {
+    position: absolute;
+    top: 1.39rem;
+    right: 3rem;
+  }
+}
+
+
 .nav-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+
+  @include respond(phone) {
+    display: none;
+  }
 
   &__d-flex {
     display: flex;
@@ -17,7 +139,7 @@
     background-color: $color-darkblue;
 
     @include respond(tab) {
-      flex: 0 0 10.5rem;
+      flex: 0 0 10rem;
     }
   }
 

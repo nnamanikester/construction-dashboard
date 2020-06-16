@@ -1,6 +1,11 @@
 .content {
+
   &__vertical-menu {
     padding: 2rem;
+
+    @include respond(phone) {
+      display: none;
+    }
   }
 
   &__vertical-menu-heading {
