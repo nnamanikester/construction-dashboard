@@ -34,8 +34,7 @@ body {
     flex: 0 0 25rem;
     height: calc(100vh - 75px);
     background-color: #2a3042;
-    overflow-y: scroll;
-    scrollbar-width: 1px; }
+    overflow-y: hidden; }
     @media (max-width: 1024px) {
       .content__vertical-menu {
         flex: 0 0 10rem; } }
@@ -249,12 +248,29 @@ body {
     .content__vertical-menu-title {
       display: none; } }
 
-.table {
-  width: 100%;
+.table-card {
   background-color: #ffffff;
+  padding: 2rem;
   border-radius: 0.5rem;
   box-shadow: 0 0.75rem 1.5rem rgba(18, 38, 63, 0.03); }
-  .table__heading, .table__data {
-    padding: 1rem;
-    border: 1px solid #a6b0cf;
+
+.table {
+  width: 100%;
+  padding: 1rem;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  border-collapse: collapse; }
+  .table__body, .table__head {
     border-collapse: collapse; }
+  .table__head {
+    background-color: #f8f8fb; }
+  .table__row {
+    border-radius: 0.5rem; }
+    .table__row:nth-child(even) {
+      background-color: #f8f8fb; }
+  .table__col-title, .table__data {
+    padding: 1rem;
+    border-collapse: collapse; }
+  .table__col-title {
+    text-align: left;
+    border-top: none; }

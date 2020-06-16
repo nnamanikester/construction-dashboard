@@ -1,13 +1,45 @@
-.table {
-  width: 100%;
+.table-card {
   background-color: $color-white;
+  padding: 2rem;
   border-radius: 0.5rem;
   box-shadow: $box-shadow;
+}
 
-  &__heading,
+.table {
+  width: 100%;
+  padding: 1rem;
+  background-color: $color-white;
+  border-radius: 0.5rem;
+  border-collapse: collapse;
+
+
+  &__body,
+  &__head {
+   // border: 1px solid $color-lightblue;
+    border-collapse: collapse;
+  }
+
+  &__head {
+    background-color: $color-white-dark;
+  }
+
+  &__row {
+    border-radius: 0.5rem;
+
+    &:nth-child(even) {
+      background-color: $color-white-dark;
+    }
+  }
+
+  &__col-title,
   &__data {
     padding: 1rem;
-    border: 1px solid $color-lightblue;
     border-collapse: collapse;
+    }
+
+    &__col-title {
+      text-align: left;
+      border-top: none;
+
     }
 }
