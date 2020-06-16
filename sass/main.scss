@@ -1,8 +1,8 @@
 @import "abstracts/variables";
 @import "abstracts/mixins";
 @import "base/base";
-@import "layouts/grid";
+@import "layouts/layout";
 
-@import "components/_navigation.scss";
+@import "components/navigation";
 @import "components/_verticalmenu.scss";
 @import "components/table";

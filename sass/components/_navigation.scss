@@ -27,18 +27,17 @@
 
     label {
       display: inline-block;
-      font-size: 3.2rem;
+      font-size: 2rem;
       margin-top: 0.5rem;
-      //text-align: right;
 
       &:not(:last-child) {
-        margin-right: 3rem
+        margin-right: 2rem
       }
     }
 
     @include respond(phone) {
       display: block;
-      padding: 1rem;
+      height: 7.5rem;
       width: 100%;
       background-color: $color-white;
       box-shadow: $box-shadow;
@@ -47,8 +46,8 @@
 
   &__mobile-menu {
     display: none;
-    position: absolute;
-    top: 7.2rem;
+    position: fixed;
+    top: 7.5rem;
     bottom: 0;
     left: 0;
     width: 45%;
@@ -100,6 +99,9 @@
     border-radius: 50%;
     background-color: $color-grey-dark;
     overflow: hidden;
+    position: relative;
+    top: 0.5rem;
+    //vertical-align: middle;
     
     img {
       width: 100%;
@@ -109,11 +111,16 @@
 
   .mobile-menu-icon {
     position: absolute;
-    top: 1.39rem;
+    top: 1.29rem;
     right: 3rem;
   }
 }
 
+body > nav > div > label[for="toggle"] {
+  position: relative;
+  top: 2rem;
+  left: 2rem;
+}
 
 .nav-header {
   display: flex;

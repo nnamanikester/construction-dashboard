@@ -31,16 +31,26 @@ body {
 .content {
   display: flex; }
   .content__vertical-menu {
-    flex: 0 0 25rem;
-    height: calc(100vh - 75px);
+    width: 25rem;
+    position: fixed;
+    top: 7.5rem;
+    bottom: 0;
+    left: 0;
     background-color: #2a3042;
     overflow-y: hidden; }
     @media (max-width: 1024px) {
       .content__vertical-menu {
-        flex: 0 0 10rem; } }
+        width: 10rem; } }
   .content__main {
-    flex: 1;
-    padding: 2rem; }
+    margin-left: 25rem;
+    padding: 2rem;
+    overflow: hidden; }
+    @media (max-width: 1024px) {
+      .content__main {
+        margin-left: 10rem; } }
+    @media (max-width: 768px) {
+      .content__main {
+        margin-left: 0; } }
 
 .nav__mobile-view {
   display: none; }
@@ -60,22 +70,22 @@ body {
       outline: none; }
   .nav__mobile-view label {
     display: inline-block;
-    font-size: 3.2rem;
+    font-size: 2rem;
     margin-top: 0.5rem; }
     .nav__mobile-view label:not(:last-child) {
-      margin-right: 3rem; }
+      margin-right: 2rem; }
   @media (max-width: 768px) {
     .nav__mobile-view {
       display: block;
-      padding: 1rem;
+      height: 7.5rem;
       width: 100%;
       background-color: #ffffff;
       box-shadow: 0 0.75rem 1.5rem rgba(18, 38, 63, 0.03); } }
 
 .nav__mobile-menu {
   display: none;
-  position: absolute;
-  top: 7.2rem;
+  position: fixed;
+  top: 7.5rem;
   bottom: 0;
   left: 0;
   width: 45%;
@@ -117,14 +127,21 @@ body {
   cursor: pointer;
   border-radius: 50%;
   background-color: #495057;
-  overflow: hidden; }
+  overflow: hidden;
+  position: relative;
+  top: 0.5rem; }
   .nav #user-photo img {
     width: 100%; }
 
 .nav .mobile-menu-icon {
   position: absolute;
-  top: 1.39rem;
+  top: 1.29rem;
   right: 3rem; }
+
+body > nav > div > label[for="toggle"] {
+  position: relative;
+  top: 2rem;
+  left: 2rem; }
 
 .nav-header {
   display: flex;
