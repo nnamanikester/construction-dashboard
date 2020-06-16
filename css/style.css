@@ -107,7 +107,11 @@ body {
   padding: 1rem;
   margin-bottom: 2rem;
   text-decoration: none;
-  color: #a6b0cf; }
+  color: #a6b0cf;
+  transition: all 0.2s ease-in-out; }
+  .nav__menu-link:hover, .nav__menu-link:active {
+    color: #ffffff;
+    background-color: #74788d; }
   .nav__menu-link i {
     display: inline-block;
     margin-right: 1rem; }
@@ -131,6 +135,10 @@ body {
   overflow: hidden;
   position: relative;
   top: 0.5rem; }
+  @media (max-width: 768px) {
+    .nav #user-photo {
+      width: 3rem;
+      height: 3rem; } }
   .nav #user-photo img {
     width: 100%; }
 
@@ -246,7 +254,12 @@ body > nav > div > label[for="toggle"] {
   list-style: none; }
 
 .content__vertical-menu-item {
-  padding: 1.5rem 1rem 2rem; }
+  padding: 1rem;
+  margin: 1.5rem 0;
+  transition: all 0.3s ease-in-out; }
+  .content__vertical-menu-item:hover, .content__vertical-menu-item:active {
+    color: #ffffff;
+    background-color: #74788d; }
   .content__vertical-menu-item .bx {
     display: inline-block;
     font-size: 1.8rem;

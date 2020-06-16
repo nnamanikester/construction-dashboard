@@ -24,8 +24,16 @@
   }
 
   &__vertical-menu-item {
-    padding: 1.5rem 1rem 2rem;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    transition: all 0.3s ease-in-out;
 
+    &:hover,
+    &:active {
+      color: $color-white;
+      background-color: $color-grey;
+    }
+    
     .bx {
       display: inline-block;
       font-size: 1.8rem;
@@ -33,7 +41,7 @@
       color: $color-lightblue;
       margin-right: 1.5rem;
       vertical-align: middle;
-
+      
       @include respond(tab) {margin-left: 1.2rem;}
     }
   }
@@ -43,6 +51,7 @@
     cursor: pointer;
     color: $color-lightblue;
     vertical-align: middle;
+
 
     @include respond(tab) {
       display: none;
