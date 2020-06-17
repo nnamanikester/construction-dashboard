@@ -1,0 +1,74 @@
+.table-card {
+  width: 100%;
+  background-color: $color-white;
+  padding: 2rem;
+  margin-bottom: 3rem;
+  border-radius: 0.5rem;
+  box-shadow: $box-shadow;
+  //overflow: scroll;
+
+  // @include respond(phone) {
+  //   background-color: none;
+  //   box-shadow: none;
+  // }
+}
+
+.table {
+  width: 100%;
+  padding: 0.8rem;
+  vertical-align: middle;
+  background-color: $color-white;
+  border-radius: 0.5rem;
+  border-collapse: collapse;
+
+  // @include respond(phone) {
+  //   display: block;
+  //   width: 100%;
+  // }
+
+  &__body,
+  &__head {
+    // border: 1px solid $color-lightblue;
+    border-collapse: collapse;
+  }
+
+  &__head {
+    background-color: $color-white-dark;
+
+    // @include respond(phone) {
+    //   display: none;
+    // }
+  }
+
+  // &__body {
+  //   @include respond(phone) {
+  //     display: block;
+  //     width: 100%;
+  //   }
+  // }
+
+  &__row {
+    border-radius: 0.5rem;
+
+    // @include respond(phone) {
+    //   display: block;
+    //   width: 100%;
+    //   margin-bottom: 1.5rem;
+    // }
+
+    &:nth-child(even) {
+      background-color: $color-white-dark;
+    }
+  }
+
+  &__col-title,
+  &__data {
+    padding: 0.8rem;
+    border-collapse: collapse;
+  }
+
+  &__col-title {
+    text-align: left;
+    border-top: none;
+  }
+}

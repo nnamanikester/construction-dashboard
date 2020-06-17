@@ -4,11 +4,13 @@
   background-color: $color-white;
   box-shadow: $box-shadow;
 
+  position: fixed;
+  width: 100%;
+
   @include respond(phone) {
     display: none;
   }
 }
-
 
 .content {
   display: flex;
@@ -29,13 +31,14 @@
 
   &__main {
     margin-left: 25rem;
+    margin-top: 7.5rem;
     padding: 2rem;
     width: 100%;
     overflow: hidden;
 
     @include respond(tab) {
-     margin-left: 10rem;
-     width: 100%;
+      margin-left: 10rem;
+      width: 100%;
     }
 
     @include respond(phone) {

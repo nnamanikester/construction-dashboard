@@ -1,8 +1,19 @@
 @import "abstracts/variables";
 @import "abstracts/mixins";
-@import "base/base";
-@import "layouts/layout";
 
-@import "components/navigation";
+@import "base/base";
+@import "base/animation";
+@import "base/typography";
+
+@import "layouts/grid";
+@import "layouts/header";
+@import "layouts/navigation";
+@import "layouts/footer";
+
 @import "components/verticalmenu";
-@import "components/table";
+@import "components/buttons";
+@import "components/cards";
+@import "components/forms";
+@import "components/tables";
+
+@import "base/utility";
