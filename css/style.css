@@ -368,6 +368,10 @@ a {
   color: #556ee6;
   text-decoration: none;
   background-color: transparent; }
+  a:link, a:visited {
+    color: #556ee6; }
+  a:hover a:active {
+    color: #556ee6; }
 
 .btn {
   display: inline-block;
@@ -401,7 +405,7 @@ a {
   border-radius: 0.2rem; }
 
 .home-btn {
-  font-size: 3.8rem;
+  font-size: 3.4rem;
   text-align: right;
   cursor: pointer; }
   .home-btn a {

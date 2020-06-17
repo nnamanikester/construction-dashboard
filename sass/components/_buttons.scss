@@ -9,6 +9,15 @@ a {
   color: #556ee6;
   text-decoration: none;
   background-color: transparent;
+
+  &:link,
+  &:visited {
+    color: #556ee6;
+  }
+
+  &:hover &:active {
+    color: #556ee6;
+  }
 }
 
 .btn {
@@ -49,7 +58,7 @@ a {
 }
 
 .home-btn {
-  font-size: 3.8rem;
+  font-size: 3.4rem;
   text-align: right;
   cursor: pointer;
 
