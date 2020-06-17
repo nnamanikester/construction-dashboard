@@ -11,6 +11,9 @@
 html {
   font-size: 10px;
   box-sizing: border-box; }
+  @media (max-width: 540px) {
+    html {
+      font-size: 9px; } }
 
 body {
   font-size: 1.4rem;
@@ -417,6 +420,9 @@ a {
   @media (max-width: 768px) {
     .form-container {
       width: 90%; } }
+  @media (max-width: 540px) {
+    .form-container {
+      width: 100%; } }
   .form-container__top {
     display: flex;
     background-color: #a6b0cf;

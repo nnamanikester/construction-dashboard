@@ -13,11 +13,15 @@
   transform: translate(-50%, -50%);
 }
 
-
-
 // MEDIA QUERIES MANAGER
 
 @mixin respond($breakpoint) {
+  @if $breakpoint == xs-phone {
+    @media (max-width: 320px) {
+      @content;
+    }
+  }
+
   @if $breakpoint == sm-phone {
     @media (max-width: 540px) {
       @content;
@@ -29,7 +33,6 @@
       @content;
     }
   }
-
 
   @if $breakpoint == tab {
     @media (max-width: 1024px) {
