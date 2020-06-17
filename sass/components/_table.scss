@@ -4,7 +4,12 @@
   padding: 2rem;
   border-radius: 0.5rem;
   box-shadow: $box-shadow;
-  overflow: scroll;
+  //overflow: scroll;
+
+  // @include respond(phone) {
+  //   background-color: none;
+  //   box-shadow: none;
+  // }
 }
 
 .table {
@@ -13,6 +18,11 @@
   background-color: $color-white;
   border-radius: 0.5rem;
   border-collapse: collapse;
+
+  @include respond(phone) {
+    display: block;
+    width: 100%;
+  }
 
 
   &__body,
@@ -23,10 +33,28 @@
 
   &__head {
     background-color: $color-white-dark;
+
+    @include respond(phone) {
+      display: none;
+    }
+  }
+
+
+  &__body {
+    @include respond(phone) {
+      display: block;
+      width: 100%;
+    }
   }
 
   &__row {
     border-radius: 0.5rem;
+
+    @include respond(phone) {
+      display: block;
+      width: 100%;
+      margin-bottom: 1.5rem;
+    }
 
     &:nth-child(even) {
       background-color: $color-white-dark;
@@ -43,5 +71,28 @@
       text-align: left;
       border-top: none;
 
+    }
+
+    &__data {
+
+      @include respond(phone) {
+        display: block;
+        width: 100%;
+        text-align: right;
+        padding-left: 50%;
+        text-align: right;
+        position: relative;
+
+        &::before {
+          content: attr(data-label);
+          position: absolute;
+          left:0;
+          width: 50%;
+          padding-left:15px;
+          font-size:14px;
+          font-weight: bold;
+          text-align: left;
+        }
+      }
     }
 }
