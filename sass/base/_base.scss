@@ -19,6 +19,10 @@ body {
   background-color: $color-white-dark;
 }
 
+.login-page {
+  padding: 2rem 4rem;
+}
+
 .breadcrumb {
   display: flex;
   flex-wrap: wrap;
@@ -33,4 +37,8 @@ body {
   padding: 0 0.5rem;
   color: #74788d;
   content: "/";
+}
+
+img {
+  width: 100%;
 }

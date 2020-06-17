@@ -29,6 +29,10 @@
   border-radius: 10rem;
 }
 
+.bg-soft-primary {
+  background-color: rgba(85, 110, 230, 0.25) !important;
+}
+
 .d-flex {
   display: flex !important;
 }
@@ -65,4 +69,8 @@
   @include respond(phone) {
     margin-left: 0;
   }
+}
+
+.text-center {
+  text-align: center;
 }

@@ -1,0 +1,91 @@
+.form-container {
+  max-width: 40rem;
+  margin: 0 auto;
+  background-color: $color-white;
+  box-shadow: $box-shadow;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  //@include abscenter();
+  @include respond(phone) {
+    width: 90%;
+  }
+
+  &__top {
+    display: flex;
+    background-color: $color-lightblue;
+    padding: 2rem 0;
+  }
+
+  &__text {
+    flex: 1;
+    align-self: center;
+    padding: 2rem;
+    color: #556ee6;
+  }
+
+  &__img {
+    flex: 1;
+  }
+
+  &__form {
+    padding: 2rem;
+    margin-top: 3rem;
+  }
+
+  &__form-group {
+    margin-bottom: 2rem;
+
+    label {
+      font-size: 1.4rem;
+      font-weight: 500;
+      display: inline-block;
+      margin-bottom: 0.5rem;
+    }
+
+    input {
+      display: block;
+      width: 100%;
+      height: calc(1.5em + 0.94rem + 2px);
+      padding: 0.75rem;
+      font-size: 1.4rem;
+      font-weight: 400;
+      line-height: 1.5;
+      color: #495057;
+      background-color: #fff;
+      background-clip: padding-box;
+      border: 1px solid #ced4da;
+      border-radius: 0.25rem;
+      transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
+        -webkit-box-shadow 0.15s ease-in-out;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  &__custom-checkbox {
+    position: relative;
+    display: block;
+    min-height: 1.21875rem;
+    margin-bottom: 2rem;
+
+    input {
+      position: relative;
+      top: 0.15rem;
+      margin-right: 1rem;
+    }
+
+    label {
+      vertical-align: middle;
+    }
+  }
+
+  &__btn {
+    margin-bottom: 2rem;
+  }
+
+  &__register {
+    padding-bottom: 2rem;
+  }
+}
