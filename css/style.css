@@ -24,6 +24,9 @@ body {
 
 .login-page {
   padding: 2rem 4rem; }
+  @media (max-width: 540px) {
+    .login-page {
+      padding: 2rem 0.9rem; } }
 
 .breadcrumb {
   display: flex;
@@ -102,7 +105,7 @@ img {
     bottom: 0;
     left: 0;
     background-color: #2a3042;
-    overflow-y: hidden; }
+    overflow-y: scroll; }
     @media (max-width: 1024px) {
       .content__vertical-menu {
         width: 10rem; } }
@@ -111,7 +114,7 @@ img {
     margin-top: 7.5rem;
     padding: 2rem;
     width: 100%;
-    overflow: hidden; }
+    overflow: scroll; }
     @media (max-width: 1024px) {
       .content__main {
         margin-left: 10rem;

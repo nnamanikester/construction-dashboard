@@ -25,6 +25,10 @@ body {
 
 .login-page {
   padding: 2rem 4rem;
+
+  @include respond(sm-phone) {
+    padding: 2rem 0.9rem;
+  }
 }
 
 .breadcrumb {
