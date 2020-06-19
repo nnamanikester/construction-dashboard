@@ -267,6 +267,9 @@
     border-radius: 50%;
     overflow: hidden;
     margin-right: 1rem; }
+    @media (max-width: 1024px) {
+      .testimonies__avatar {
+        margin-right: 2rem; } }
 
 *,
 *::before,
@@ -611,6 +614,7 @@ body > nav > div > label[for="toggle"] {
     max-width: 65rem;
     margin: 2rem auto; }
   .footer__copyright {
+    font-size: 1.4rem;
     max-width: 65rem;
     margin: 2rem auto; }
 

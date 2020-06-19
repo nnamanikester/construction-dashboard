@@ -377,5 +377,9 @@
     border-radius: 50%;
     overflow: hidden;
     margin-right: 1rem;
+
+    @include respond(tab) {
+      margin-right: 2rem;
+    }
   }
 }
