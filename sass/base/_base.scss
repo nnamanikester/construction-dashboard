@@ -13,6 +13,10 @@ html {
   @include respond(sm-phone) {
     font-size: 9px;
   }
+
+  @include respond(xs-phone) {
+    font-size: 8px;
+  }
 }
 
 body {
@@ -23,11 +27,28 @@ body {
   background-color: $color-white-dark;
 }
 
+.section {
+  padding: 8rem 5rem;
+  border: 1px solid transparent;
+
+  @include respond(lg-tab) {
+    padding: 2rem 4rem;
+  }
+
+  @include respond(sm-phone) {
+    padding: 3rem;
+  }
+
+  @include respond(xs-phone) {
+    padding: 2rem;
+  }
+}
+
 .login-page {
   padding: 2rem 4rem;
 
   @include respond(sm-phone) {
-    padding: 2rem 0.9rem;
+    padding: 2rem 2rem;
   }
 }
 
