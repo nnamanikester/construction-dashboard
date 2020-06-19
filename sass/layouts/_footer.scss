@@ -1,4 +1,35 @@
 .footer {
   padding: 2rem;
   background-color: $color-white-dark-2;
+  text-align: center;
+
+  &__content {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__item {
+    margin: 2rem;
+  }
+
+  &__link {
+    color: $color-darkblue;
+  }
+
+  &__desc {
+    max-width: 65rem;
+    margin: 2rem auto;
+  }
+
+  &__copyright {
+    max-width: 65rem;
+    margin: 2rem auto;
+  }
 }
