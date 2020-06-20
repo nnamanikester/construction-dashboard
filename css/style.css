@@ -618,14 +618,12 @@ body > nav > div > label[for="toggle"] {
     max-width: 65rem;
     margin: 2rem auto; }
 
-.content__vertical-menu {
-  padding: 2rem; }
-  @media (max-width: 768px) {
-    .content__vertical-menu {
-      display: none; } }
+@media (max-width: 768px) {
+  .content__vertical-menu {
+    display: none; } }
 
 .content__vertical-menu-heading {
-  padding: 0 1rem;
+  padding: 2rem 2rem 0;
   color: #79829c;
   font-size: 1.2rem;
   font-weight: 500; }
@@ -637,7 +635,7 @@ body > nav > div > label[for="toggle"] {
   list-style: none; }
 
 .content__vertical-menu-item {
-  padding: 1rem;
+  padding: 1.5rem 2rem;
   margin: 1.5rem 0;
   transition: all 0.3s ease-in-out; }
   .content__vertical-menu-item:hover, .content__vertical-menu-item:active {
@@ -688,7 +686,7 @@ a {
   user-select: none;
   background-color: transparent;
   border: 1px solid transparent;
-  padding: 0.75rem 2rem;
+  padding: 0.75rem 2.75rem;
   line-height: 1.5;
   border-radius: 0.25rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out; }
@@ -720,6 +718,67 @@ a {
   background-color: #ffffff;
   box-shadow: 0 0.75rem 1.5rem rgba(18, 38, 63, 0.03);
   border-radius: 0.5rem; }
+  .card__body {
+    padding: 4rem; }
+  .card__title-1 {
+    font-size: 1.8rem;
+    font-weight: 500; }
+  .card__title-2 {
+    font-size: 1.6rem;
+    font-weight: 400; }
+    .card__title-2--lit {
+      font-size: 1.4rem;
+      color: #a6b0cf; }
+  .card__details {
+    display: flex;
+    justify-content: space-between; }
+  .card__left {
+    display: block; }
+  .card__desc {
+    max-width: 60%; }
+  .card__list {
+    list-style: none;
+    max-width: 80%;
+    border-right: 2px solid #a6b0cf; }
+  .card__item {
+    display: flex;
+    background-color: #f8f8fb;
+    padding: 2rem; }
+  .card__message {
+    display: inline-block;
+    font-size: 1.2rem; }
+  .card__avatar--sm {
+    display: inline-block;
+    width: 4.5rem;
+    height: 4.5rem;
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+    background-color: #f3f3f9;
+    text-align: center;
+    vertical-align: middle;
+    overflow: hidden; }
+    .card__avatar--sm:not(:last-child) {
+      margin-right: -1.2rem; }
+    .card__avatar--sm i {
+      display: inline-block;
+      font-size: 2.2rem;
+      color: #a6b0cf;
+      margin-top: 1rem; }
+  .card__avatar--md {
+    display: inline-block;
+    width: 12rem;
+    height: 5rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    margin-right: 2rem; }
+  .card__textarea {
+    display: block;
+    width: 80%;
+    height: 8rem;
+    border: 1.5px solid #a6b0cf;
+    margin-bottom: 2rem; }
+    .card__textarea:focus {
+      outline: none; }
 
 .form-container {
   max-width: 40rem;
@@ -864,6 +923,9 @@ a {
 
 .mb-2 {
   margin-bottom: 2rem !important; }
+
+.mb-4 {
+  margin-bottom: 4rem !important; }
 
 .ml {
   margin-left: 25rem; }

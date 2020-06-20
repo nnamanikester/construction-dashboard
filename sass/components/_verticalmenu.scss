@@ -1,14 +1,12 @@
 .content {
   &__vertical-menu {
-    padding: 2rem;
-
     @include respond(phone) {
       display: none;
     }
   }
 
   &__vertical-menu-heading {
-    padding: 0 1rem;
+    padding: 2rem 2rem 0;
     color: $color-darkerblue;
     font-size: 1.2rem;
     font-weight: 500;
@@ -23,7 +21,7 @@
   }
 
   &__vertical-menu-item {
-    padding: 1rem;
+    padding: 1.5rem 2rem;
     margin: 1.5rem 0;
     transition: all 0.3s ease-in-out;
 
