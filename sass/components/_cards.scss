@@ -57,12 +57,41 @@
     list-style: none;
     max-width: 80%;
     border-right: 2px solid $color-lightblue;
+
+    &--sm {
+      display: flex;
+      list-style: none;
+    }
+
+    &--fl-dr {
+      display: flex;
+      list-style: none;
+      flex-direction: column;
+    }
   }
 
   &__item {
     display: flex;
     background-color: $color-white-dark;
     padding: 2rem;
+
+    &--sm {
+      padding: 1rem;
+    }
+
+    &--fl-dr {
+      display: flex;
+      align-items: center;
+      padding: 1rem;
+
+      &:not(:last-child) {
+        border-bottom: 1px solid #eeeeee;
+      }
+
+      // &:nth-child(even) {
+
+      // }
+    }
   }
 
   &__message {
@@ -166,5 +195,13 @@
   &__bottom {
     border-top: 1.5px solid #eeeeee;
     position: relative;
+  }
+
+  &__info {
+    margin-left: 1rem;
+    span {
+      display: block;
+      font-size: 1rem;
+    }
   }
 }

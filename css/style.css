@@ -749,10 +749,25 @@ a {
     list-style: none;
     max-width: 80%;
     border-right: 2px solid #a6b0cf; }
+    .card__list--sm {
+      display: flex;
+      list-style: none; }
+    .card__list--fl-dr {
+      display: flex;
+      list-style: none;
+      flex-direction: column; }
   .card__item {
     display: flex;
     background-color: #f8f8fb;
     padding: 2rem; }
+    .card__item--sm {
+      padding: 1rem; }
+    .card__item--fl-dr {
+      display: flex;
+      align-items: center;
+      padding: 1rem; }
+      .card__item--fl-dr:not(:last-child) {
+        border-bottom: 1px solid #eeeeee; }
   .card__message {
     display: inline-block;
     font-size: 1.2rem; }
@@ -817,6 +832,11 @@ a {
   .card__bottom {
     border-top: 1.5px solid #eeeeee;
     position: relative; }
+  .card__info {
+    margin-left: 1rem; }
+    .card__info span {
+      display: block;
+      font-size: 1rem; }
 
 .form-container {
   max-width: 40rem;
