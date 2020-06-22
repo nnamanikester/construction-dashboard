@@ -400,7 +400,7 @@ img {
     margin-top: 7.5rem;
     padding: 2rem;
     width: 100%;
-    overflow: scroll; }
+    overflow: hidden; }
     @media (max-width: 1024px) {
       .content__main {
         margin-left: 10rem;
@@ -702,7 +702,7 @@ a {
 
 .btn-sm {
   padding: 0.25rem 0.5rem;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   line-height: 1.5;
   border-radius: 0.2rem; }
 
@@ -731,11 +731,20 @@ a {
       color: #a6b0cf; }
   .card__details {
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    align-items: center; }
   .card__left {
     display: block; }
   .card__desc {
     max-width: 60%; }
+    .card__desc--lit {
+      color: #a6b0cf;
+      font-size: 1.3rem; }
+  .card__img {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    margin: 0 auto; }
   .card__list {
     list-style: none;
     max-width: 80%;
@@ -747,6 +756,23 @@ a {
   .card__message {
     display: inline-block;
     font-size: 1.2rem; }
+  .card__avatar--xs {
+    display: inline-block;
+    width: 3.5rem;
+    height: 3.5rem;
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+    background-color: #f3f3f9;
+    text-align: center;
+    vertical-align: middle;
+    overflow: hidden; }
+    .card__avatar--xs:not(:last-child) {
+      margin-right: -1.2rem; }
+    .card__avatar--xs i {
+      display: inline-block;
+      font-size: 2rem;
+      color: #a6b0cf;
+      margin-top: 0.5rem; }
   .card__avatar--sm {
     display: inline-block;
     width: 4.5rem;
@@ -771,6 +797,13 @@ a {
     border-radius: 1rem;
     overflow: hidden;
     margin-right: 2rem; }
+  .card__avatar--mdr {
+    display: block;
+    width: 12rem;
+    height: 7rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 2rem; }
   .card__textarea {
     display: block;
     width: 80%;
@@ -779,6 +812,11 @@ a {
     margin-bottom: 2rem; }
     .card__textarea:focus {
       outline: none; }
+  .card__icon i {
+    font-size: 2.4rem; }
+  .card__bottom {
+    border-top: 1.5px solid #eeeeee;
+    position: relative; }
 
 .form-container {
   max-width: 40rem;
@@ -892,6 +930,14 @@ a {
   color: #34c38f;
   background-color: rgba(52, 195, 143, 0.18); }
 
+.badge-soft-primary {
+  color: #0062cc;
+  background-color: rgba(0, 98, 204, 0.18); }
+
+.badge-soft-warning {
+  color: #ffc107;
+  background-color: rgba(255, 193, 7, 0.18); }
+
 .badge-soft-danger {
   color: #f46a6a;
   background-color: rgba(244, 106, 106, 0.18); }
@@ -921,6 +967,12 @@ a {
   font-weight: 600;
   font-size: 2rem !important; }
 
+.mt-1 {
+  margin-top: 1rem !important; }
+
+.mb-1 {
+  margin-bottom: 1rem !important; }
+
 .mb-2 {
   margin-bottom: 2rem !important; }
 
@@ -939,6 +991,16 @@ a {
 .text-center {
   text-align: center; }
 
+.text-right {
+  text-align: right; }
+
 .max-width {
   max-width: 114rem;
   margin: 0 auto; }
+
+.bg-ng {
+  background-color: transparent !important;
+  box-shadow: none; }
+
+.align-self {
+  align-self: start; }

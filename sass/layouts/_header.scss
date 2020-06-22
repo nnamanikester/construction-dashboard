@@ -34,7 +34,7 @@
     margin-top: 7.5rem;
     padding: 2rem;
     width: 100%;
-    overflow: scroll;
+    overflow: hidden;
 
     @include respond(tab) {
       margin-left: 10rem;

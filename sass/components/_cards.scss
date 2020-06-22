@@ -25,6 +25,7 @@
   &__details {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   &__left {
@@ -33,6 +34,18 @@
 
   &__desc {
     max-width: 60%;
+
+    &--lit {
+      color: $color-lightblue;
+      font-size: 1.3rem;
+    }
+  }
+
+  &__img {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    margin: 0 auto;
   }
 
   // &__avatars {
@@ -58,6 +71,29 @@
   }
 
   &__avatar {
+    &--xs {
+      display: inline-block;
+      width: 3.5rem;
+      height: 3.5rem;
+      border: 3px solid $color-white;
+      border-radius: 50%;
+      background-color: #f3f3f9;
+      text-align: center;
+      vertical-align: middle;
+      overflow: hidden;
+
+      &:not(:last-child) {
+        margin-right: -1.2rem;
+      }
+
+      i {
+        display: inline-block;
+        font-size: 2rem;
+        color: $color-lightblue;
+        margin-top: 0.5rem;
+      }
+    }
+
     &--sm {
       display: inline-block;
       width: 4.5rem;
@@ -89,6 +125,15 @@
       overflow: hidden;
       margin-right: 2rem;
     }
+
+    &--mdr {
+      display: block;
+      width: 12rem;
+      height: 7rem;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-right: 2rem;
+    }
   }
 
   &__textarea {
@@ -101,5 +146,25 @@
     &:focus {
       outline: none;
     }
+  }
+
+  &__icon {
+    i {
+      font-size: 2.4rem;
+    }
+
+    // &--sm {
+    //   // i {
+    //   //   font-size: 1.6rem;
+    //   //   position: absolute;
+    //   //   top: 0.5rem;
+    //   //   right: 0.5rem;
+    //   // }
+    // }
+  }
+
+  &__bottom {
+    border-top: 1.5px solid #eeeeee;
+    position: relative;
   }
 }

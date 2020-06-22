@@ -18,6 +18,16 @@
   background-color: rgba(52, 195, 143, 0.18);
 }
 
+.badge-soft-primary {
+  color: #0062cc;
+  background-color: rgba(0, 98, 204, 0.18);
+}
+
+.badge-soft-warning {
+  color: #ffc107;
+  background-color: rgba(255, 193, 7, 0.18);
+}
+
 .badge-soft-danger {
   color: #f46a6a;
   background-color: rgba(244, 106, 106, 0.18);
@@ -55,6 +65,14 @@
   font-size: 2rem !important;
 }
 
+.mt-1 {
+  margin-top: 1rem !important;
+}
+
+.mb-1 {
+  margin-bottom: 1rem !important;
+}
+
 .mb-2 {
   margin-bottom: 2rem !important;
 }
@@ -79,7 +97,20 @@
   text-align: center;
 }
 
+.text-right {
+  text-align: right;
+}
+
 .max-width {
   max-width: 114rem;
   margin: 0 auto;
+}
+
+.bg-ng {
+  background-color: transparent !important;
+  box-shadow: none;
+}
+
+.align-self {
+  align-self: start;
 }

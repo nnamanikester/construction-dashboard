@@ -14,12 +14,6 @@
       rel="stylesheet"
     />
 
-    <!-- <link
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-      crossorigin="anonymous"
-    /> -->
     <!-- CSS Styles -->
     <link href="css/style.css" type="text/css" rel="stylesheet" />
     <title>Construction Dashboard</title>
@@ -139,11 +133,17 @@
         <ul class="content__vertical-menu-list">
           <li class="content__vertical-menu-item">
             <i class="bx bx-home-circle"></i>
-            <span class="content__vertical-menu-title">Overview</span>
+            <a href="index.html">
+              <span class="content__vertical-menu-title">Overview</span>
+            </a>
           </li>
           <li class="content__vertical-menu-item">
             <i class="bx bx-log-in-circle"></i>
-            <span class="content__vertical-menu-title">Invertory Logging</span>
+            <a href="pages/inventory.html">
+              <span class="content__vertical-menu-title"
+                >Invertory Logging</span
+              >
+            </a>
           </li>
           <li class="content__vertical-menu-item">
             <i class="bx bx-layer"></i>
@@ -178,18 +178,99 @@
             <div
               class="page-title-box d-flex align-items-center justify-content-between"
             >
-              <h4 class="mb-0 font-size-18">Dashboard</h4>
+              <h4 class="mb-0 font-size-18">Projects Overview</h4>
 
               <div class="page-title-right">
                 <ol class="breadcrumb">
-                  <li class="breadcrumb-item"><a href="#">Dashboards</a></li>
-                  <li class="breadcrumb-item active">Dashboard</li>
+                  <li class="breadcrumb-item"><a href="#">Projects</a></li>
+                  <li class="breadcrumb-item active">Project Overview</li>
                 </ol>
               </div>
             </div>
           </div>
         </div>
         <!-- row ends here -->
+
+        <!-- <canvas id="myChart" width="400" height="400"></canvas> -->
+
+        <!-- row begins here -->
+        <div class="row mb-2">
+          <div class="col-1-of-4">
+            <div class="card">
+              <h3 class="card__title-2 card__title-2--lit mb-2">
+                Project Overview
+              </h3>
+
+              <div class="card__details mb-2">
+                <div class="card__icon">
+                  <i class="bx bxs-layer"></i>
+                </div>
+                <div>
+                  <span>Completed Projects</span>
+                </div>
+
+                <div>
+                  <span>16</span>
+                </div>
+              </div>
+
+              <button class="btn btn-primary btn-sm">View more</button>
+            </div>
+          </div>
+          <div class="col-1-of-4">
+            <div class="card">
+              <h3 class="card__title-2 card__title-2--lit mb-2">
+                Recently Progress
+              </h3>
+
+              <div class="card__details mb-2">
+                <div class="card__icon">
+                  <i class="bx bxs-bar-chart-alt-2"></i>
+                </div>
+                <div>On Site</div>
+              </div>
+              <button class="btn btn-primary btn-sm">Notifications</button>
+            </div>
+          </div>
+          <div class="col-1-of-4">
+            <div class="card">
+              <h3 class="card__title-2 card__title-2--lit mb-2">Meeting</h3>
+
+              <div class="card__details mb-2">
+                <div class="card__icon">
+                  <i class="bx bxs-calendar"></i>
+                </div>
+
+                <div>
+                  <span>Appointments</span>
+                </div>
+
+                <div>
+                  <span>4</span>
+                </div>
+              </div>
+              <button class="btn btn-primary btn-sm">See Schedule</button>
+            </div>
+          </div>
+          <div class="col-1-of-4">
+            <div class="card">
+              <h3 class="card__title-2 card__title-2--lit mb-2">Entries</h3>
+
+              <div class="card__details mb-2">
+                <div class="card__icon">
+                  <i class="bx bx-list-check"></i>
+                </div>
+
+                <div>
+                  <span>Site Invertories</span>
+                </div>
+              </div>
+
+              <button class="btn btn-primary btn-sm">See Details</button>
+            </div>
+          </div>
+        </div>
+        <!-- row end here -->
 
         <!-- row begins here -->
         <div class="row mb-2">
@@ -267,145 +348,68 @@
             </div>
           </div>
           <div class="col-1-of-3">
-            <div class="card">This is a card</div>
+            <div class="card mb-2">
+              <div class="card__body">
+                <h2 class="card__title-1 mb-2">
+                  Project Enugu District GOV. Approved
+                </h2>
+
+                <h3 class="card__title-2 card__title-2--lit mb-4">43%</h3>
+
+                <div class="card__avatars">
+                  <span class="card__avatar--xs">
+                    <img
+                      src="../img/photo-1569520254493-8edfdeaa8fae.jpg"
+                      alt="user image"
+                    />
+                  </span>
+                  <span class="card__avatar--xs">
+                    <img
+                      src="../img/foto-sushi-6anudmpILw4-unsplash.jpg"
+                      alt="user image"
+                    />
+                  </span>
+                  <span class="card__avatar--xs">
+                    <i class="bx bx-plus"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mb-2">
+              <div class="card__body">
+                <h2 class="card__title-1 mb-2">
+                  Project Enugu District GOV. Approved
+                </h2>
+
+                <h3 class="card__title-2 card__title-2--lit mb-4">43%</h3>
+
+                <div class="card__avatars">
+                  <span class="card__avatar--xs">
+                    <img
+                      src="../img/photo-1569520254493-8edfdeaa8fae.jpg"
+                      alt="user image"
+                    />
+                  </span>
+                  <span class="card__avatar--xs">
+                    <img
+                      src="../img/foto-sushi-6anudmpILw4-unsplash.jpg"
+                      alt="user image"
+                    />
+                  </span>
+                  <span class="card__avatar--xs">
+                    <i class="bx bx-plus"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <button class="btn btn-primary btn-block">View more</button>
           </div>
         </div>
         <!-- row end here -->
 
         <!-- table starts here -->
-        <div class="table-card">
-          <!-- row begins here -->
-          <div class="row">
-            <div class="col-12">
-              <table class="table">
-                <thead class="table__head">
-                  <th class="table__col-title">S.No</th>
-                  <th class="table__col-title">Name</th>
-                  <th class="table__col-title">Age</th>
-                  <th class="table__col-title">Marks%</th>
-                  <th class="table__col-title">Status</th>
-                </thead>
-
-                <tbody class="table__body">
-                  <tr class="table__row">
-                    <td class="table__data" data-label="S.No">1</td>
-                    <td class="table__data" data-label="Name">Dinesh</td>
-                    <td class="table__data" data-label="Age">34</td>
-                    <td class="table__data" data-label="Marks%">50%</td>
-                    <td class="table__data" data-label="Staus">
-                      <span class="badge badge-pill badge-soft-success"
-                        >Passed</span
-                      >
-                    </td>
-                  </tr>
-
-                  <tr class="table__row">
-                    <td class="table__data" data-label="S.No">2</td>
-                    <td class="table__data" data-label="Name">Kamal</td>
-                    <td class="table__data" data-label="Age">23</td>
-                    <td class="table__data" data-label="Marks%">70%</td>
-                    <td class="table__data" data-label="Staus">
-                      <span class="badge badge-pill badge-soft-success"
-                        >Passed</span
-                      >
-                    </td>
-                  </tr>
-
-                  <tr class="table__row">
-                    <td class="table__data" data-label="S.No">3</td>
-                    <td class="table__data" data-label="Name">Neha</td>
-                    <td class="table__data" data-label="Age">20</td>
-                    <td class="table__data" data-label="Marks%">90%</td>
-                    <td class="table__data" data-label="Staus">
-                      <span class="badge badge-pill badge-soft-success"
-                        >Passed</span
-                      >
-                    </td>
-                  </tr>
-
-                  <tr class="table__row">
-                    <td class="table__data" data-label="S.No">4</td>
-                    <td class="table__data" data-label="Name">Priya</td>
-                    <td class="table__data" data-label="Age">30</td>
-                    <td class="table__data" data-label="Marks%">30%</td>
-                    <td class="table__data" data-label="Staus">
-                      <span class="badge badge-pill badge-soft-danger"
-                        >Passed</span
-                      >
-                    </td>
-                  </tr>
-
-                  <tr class="table__row">
-                    <td class="table__data" data-label="S.No">3</td>
-                    <td class="table__data" data-label="Name">Neha</td>
-                    <td class="table__data" data-label="Age">20</td>
-                    <td class="table__data" data-label="Marks%">90%</td>
-                    <td class="table__data" data-label="Staus">
-                      <span class="badge badge-pill badge-soft-success"
-                        >Passed</span
-                      >
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-
-          <!-- row ends here -->
-        </div>
-
-        <!-- row begins here -->
-        <div class="row mb-2">
-          <div class="col-1-of-2">
-            <div class="card">THis is a col 1 of 2</div>
-          </div>
-
-          <div class="col-1-of-2">
-            <div class="card">THis is a col 1 of 2</div>
-          </div>
-        </div>
-
-        <!-- row ends here -->
-
-        <!-- row begins here -->
-
-        <div class="row mb-2">
-          <div class="col-1-of-3">
-            <div class="card">This is a col 1 of 3</div>
-          </div>
-          <div class="col-1-of-3">
-            <div class="card">This is a col 1 of 3</div>
-          </div>
-          <div class="col-1-of-3">
-            <div class="card">This is a col 1 of 3</div>
-          </div>
-        </div>
-
-        <!-- row ends here -->
-
-        <!-- row begins here -->
-        <div class="row mb-2">
-          <div class="col-2-of-3">
-            <div class="card">This is a col 2 of 3</div>
-          </div>
-          <div class="col-1-of-3">
-            <div class="card">This is a col 1 of 3</div>
-          </div>
-        </div>
-        <!-- row ends here -->
-
-        <!-- row begins here -->
-        <div class="row mb-2">
-          <div class="col-1-of-3">
-            <div class="card">This is a col 1 of 3</div>
-          </div>
-          <div class="col-1-of-3">
-            <div class="card">This is a col 1 of 3</div>
-          </div>
-          <div class="col-1-of-3">
-            <div class="card">This is a col 1 of 3</div>
-          </div>
-        </div>
         <!-- row ends here -->
       </main>
       <!-- main section ends here -->
