@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Icon font -->
+    <link
+      href="https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- CSS Styles -->
+    <link href="../css/style.css" type="text/css" rel="stylesheet" />
+    <title>Construction Dashboard</title>
+  </head>
+  <body>
+    <!-- Page begins -->
+    <nav class="nav">
+      <div class="nav__mobile-view">
+        <!-- Mobile Hamburger menu toggle bottom -->
+
+        <label for="toggle" class="toggle"><i class="bx bx-menu"></i></label>
+        <input type="checkbox" id="toggle" />
+
+        <!-- Mobile Menu -->
+        <div class="nav__mobile-menu">
+          <h3 class="nav__menu-heading">MENU</h3>
+          <a href="#" class="nav__menu-link">
+            <i class="bx bx-home-circle nav__menu-icon"></i>
+            <span class="nav__menu-title">Dashboard</span>
+          </a>
+          <a href="#" class="nav__menu-link">
+            <i class="bx bx-log-in-circle"></i>
+            <span class="nav__menu-title">Invertory Logging</span>
+          </a>
+          <a href="#" class="nav__menu-link">
+            <i class="bx bx-layer"></i>
+            <span class="nav__menu-title">Progress Report</span>
+          </a>
+          <a href="#" class="nav__menu-link">
+            <i class="bx bx-task"></i>
+            <span class="nav__menu-title">Store Instructions</span>
+          </a>
+          <a href="#" class="nav__menu-link">
+            <i class="bx bx-share-alt"></i>
+            <span class="nav__menu-title">Share Photos</span>
+          </a>
+          <a href="#" class="nav__menu-link">
+            <i class="bx bx-notepad"></i>
+            <span class="nav__menu-title">Send & Review R.F.I</span>
+          </a>
+          <a href="#" class="nav__menu-link">
+            <i class="bx bx-mobile-landscape"></i>
+            <span class="nav__menu-title">Monitor Invertory</span>
+          </a>
+        </div>
+
+        <input
+          type="text"
+          id="search"
+          placeholder="Search"
+          autocomplete="off"
+        />
+
+        <div class="mobile-menu-icon">
+          <label for="search"><i class="bx bx-search-alt"></i></label>
+          <label class="nav__notification"><i class="bx bx-bell"></i></label>
+          <label id="user-photo"
+            ><img
+              src="../img/foto-sushi-6anudmpILw4-unsplash.jpg"
+              alt="user-photo"
+          /></label>
+          <label class="nav__settings"><i class="bx bx-cog"></i></label>
+        </div>
+      </div>
+    </nav>
+    <div class="top-page">
+      <header class="header">
+        <nav class="nav-header">
+          <div class="nav-header__d-flex">
+            <div class="nav-header__brand">
+              <div class="nav-header__logo">
+                <i class="bx bxl-slack-old"></i>
+              </div>
+            </div>
+            <form action="" method="" class="nav-header__form">
+              <input
+                type="text"
+                class="nav-header__search"
+                name="search"
+                placeholder="Search..."
+                autocomplete="off"
+              />
+              <i class="bx bx-search-alt search-icon"></i>
+            </form>
+            <div class="nav-header__dropdown">
+              <span>Mega menu</span>
+            </div>
+          </div>
+          <div class="nav-header__d-flex">
+            <span class="nav-header__searchicon"
+              ><i class="bx bx-search-alt"></i
+            ></span>
+            <span class="nav-header__customize"
+              ><i class="bx bx-plus"></i
+            ></span>
+            <span class="nav-header__multiple"
+              ><i class="bx bxs-select-multiple"></i
+            ></span>
+            <span class="nav-header__notification"
+              ><i class="bx bx-bell"></i
+            ></span>
+            <span class="nav-header__user-photo"
+              ><img
+                src="../img/foto-sushi-6anudmpILw4-unsplash.jpg"
+                alt="user-photo"
+            /></span>
+            <span class="nav-header__user">John Doe</span>
+            <span class="nav-header__settings"><i class="bx bx-cog"></i></span>
+          </div>
+        </nav>
+      </header>
+      <!-- Header ends here -->
+    </div>
+
+    <!-- Vertical Menu & Main Content -->
+    <div class="content">
+      <nav class="content__vertical-menu">
+        <h3 class="content__vertical-menu-heading">MENU</h3>
+        <ul class="content__vertical-menu-list">
+          <li class="content__vertical-menu-item">
+            <i class="bx bx-home-circle"></i>
+            <a href="../index.html">
+              <span class="content__vertical-menu-title">Overview</span>
+            </a>
+          </li>
+          <li class="content__vertical-menu-item">
+            <i class="bx bx-log-in-circle"></i>
+            <a href="./inventory.html">
+              <span class="content__vertical-menu-title"
+                >Invertory Logging</span
+              >
+            </a>
+          </li>
+          <li class="content__vertical-menu-item">
+            <i class="bx bx-layer"></i>
+            <a href="./report.html">
+              <span class="content__vertical-menu-title">Progress Report</span>
+            </a>
+          </li>
+          <li class="content__vertical-menu-item">
+            <i class="bx bx-task"></i>
+            <a href="./task.html">
+              <span class="content__vertical-menu-title"
+                >Store Instructions</span
+              >
+            </a>
+          </li>
+          <li class="content__vertical-menu-item">
+            <i class="bx bx-share-alt"></i>
+            <span class="content__vertical-menu-title">Share Photos</span>
+          </li>
+          <li class="content__vertical-menu-item">
+            <i class="bx bx-notepad"></i>
+            <span class="content__vertical-menu-title"
+              >Send & Review R.F.I</span
+            >
+          </li>
+          <li class="content__vertical-menu-item">
+            <i class="bx bx-mobile"></i>
+            <span class="content__vertical-menu-title">Monitor Invertory</span>
+          </li>
+        </ul>
+      </nav>
+      <!-- Vertical Menu End Here -->
+
+      <!-- Main Content start Here -->
+      <main class="content__main">
+        Store Instructions
+      </main>
+    </div>
+  </body>
+</html>
