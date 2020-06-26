@@ -47,6 +47,13 @@
   display: flex !important;
 }
 
+.d-fl-col {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: flex-start !important;
+  align-items: start;
+}
+
 .justify-content-between {
   justify-content: space-between !important;
 }
@@ -63,6 +70,18 @@
   text-transform: uppercase;
   font-weight: 600;
   font-size: 2rem !important;
+}
+
+.pd-2 {
+  padding: 2rem !important;
+}
+
+.e-width {
+  width: 35rem !important;
+}
+
+.m-0 {
+  margin: 0 !important;
 }
 
 .mt-1 {
@@ -91,6 +110,10 @@
   @include respond(phone) {
     margin-left: 0;
   }
+}
+
+.mr-2 {
+  margin-right: 2rem !important;
 }
 
 .text-center {

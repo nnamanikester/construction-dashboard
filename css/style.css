@@ -17,10 +17,10 @@
       display: block; } }
 
 .homepage__toggle {
-  font-size: 5rem;
+  font-size: 4.2rem;
   color: #ffffff;
   position: absolute;
-  top: 1rem;
+  top: 1.5rem;
   right: 4rem; }
 
 .homepage__mobile-menu {
@@ -28,7 +28,7 @@
 
 .homepage__menu-link {
   display: block;
-  font-size: 2.2rem;
+  font-size: 1.8rem;
   margin: 3rem;
   color: #a6b0cf; }
 
@@ -115,16 +115,15 @@
         font-size: 1.4rem; } }
   .intro__copy-cta {
     display: inline-block;
-    font-size: 1.6rem;
-    padding: 1.2rem 2.5rem;
+    width: 15rem;
     border: none;
     cursor: pointer;
-    color: #ffffff;
-    background-color: #232a40; }
+    color: #ffffff; }
     @media (max-width: 1200px) {
       .intro__copy-cta {
-        font-size: 1.4rem;
-        margin-bottom: 4rem; } }
+        width: 12rem; }
+        .intro__copy-cta:last-child {
+          margin-bottom: 4rem; } }
   .intro__img {
     padding: 2rem; }
     @media (max-width: 1024px) {
@@ -237,21 +236,21 @@
   background-color: #ffffff;
   box-shadow: 0 0.75rem 1.5rem rgba(18, 38, 63, 0.03);
   border-radius: 0.5rem; }
-  .testimonies__features {
+  .testimonies__features, .contact-us {
     max-width: 75rem;
     margin: 0 auto 8rem;
     text-align: center; }
-  .testimonies__heading {
+  .testimonies__heading, .contact-us__heading {
     font-size: 4.8rem;
     margin-top: 5rem;
     margin-bottom: 1rem; }
     @media (max-width: 1200px) {
-      .testimonies__heading {
+      .testimonies__heading, .contact-us__heading {
         font-size: 3.6rem; } }
-  .testimonies__subtitle {
+  .testimonies__subtitle, .contact-us__subtitle {
     font-size: 1.6rem; }
     @media (max-width: 1200px) {
-      .testimonies__subtitle {
+      .testimonies__subtitle, .contact-us__subtitle {
         font-size: 1.4rem; } }
   .testimonies__cite {
     display: flex;
@@ -270,6 +269,58 @@
     @media (max-width: 1024px) {
       .testimonies__avatar {
         margin-right: 2rem; } }
+
+.contact-us-section {
+  background-image: linear-gradient(#232a40ea, #232a40ea), url(../img/3992522.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.contact-us__heading {
+  color: #ffffff; }
+
+.contact-us__subtitle {
+  color: #ffffff; }
+
+.contact-us__form .form__group label {
+  display: inline-block;
+  color: #ffffff; }
+
+.contact-us__form .form__group textarea {
+  width: 100%;
+  font-size: inherit;
+  color: #232a40;
+  outline: none;
+  padding: 1rem;
+  border-radius: 0.5rem; }
+
+.contact-us__btn {
+  display: inline-block;
+  font-size: 1.4rem;
+  border: 1.5px solid #ffffff;
+  background-color: #232a40;
+  color: #ffffff;
+  width: 12rem;
+  padding: 1rem 2.3rem;
+  cursor: pointer;
+  outline: none;
+  margin-bottom: 4rem; }
+
+.scroll-topbtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  position: fixed;
+  bottom: 4rem;
+  right: 4rem;
+  border: 2px solid #74788d;
+  border-radius: 50%;
+  cursor: pointer; }
+  .scroll-topbtn i {
+    font-size: 3.2rem;
+    color: #74788d; }
 
 *,
 *::before,
@@ -594,6 +645,21 @@ body > nav > div > label[for="toggle"] {
     .nav-header__user-photo img {
       width: 100%; }
 
+/* =========================*/
+/* Sticky Navigation
+/* =========================*/
+.sticky .main_nav {
+  margin-top: 15px; }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -webkit-box-shadow: 0 2px 2px #efefef;
+  box-shadow: 0 2px 2px #efefef;
+  z-index: 99999; }
+
 .footer {
   padding: 2rem;
   background-color: #f2f2f5;
@@ -601,13 +667,17 @@ body > nav > div > label[for="toggle"] {
   .footer__content {
     max-width: 100%;
     margin: 0 auto; }
+  .footer__logo {
+    width: 5.5rem;
+    height: 5.5rem;
+    margin: 2rem auto; }
   .footer__list {
     list-style: none;
     display: flex;
     justify-content: center;
     align-items: center; }
-  .footer__item {
-    margin: 2rem; }
+  .footer__item:not(:last-child) {
+    margin-right: 2rem; }
   .footer__link {
     color: #232a40; }
   .footer__desc {
@@ -838,7 +908,7 @@ a {
       display: block;
       font-size: 1rem; }
 
-.form-container {
+.form-container, .contact-us__form {
   max-width: 40rem;
   margin: 0 auto;
   background-color: #ffffff;
@@ -846,10 +916,10 @@ a {
   border-radius: 0.5rem;
   overflow: hidden; }
   @media (max-width: 768px) {
-    .form-container {
+    .form-container, .contact-us__form {
       width: 90%; } }
   @media (max-width: 540px) {
-    .form-container {
+    .form-container, .contact-us__form {
       width: 100%; } }
   .form-container__top {
     display: flex;
@@ -865,14 +935,14 @@ a {
   .form-container__form {
     padding: 2rem;
     margin-top: 3rem; }
-  .form-container__form-group {
+  .form-container__form-group, .contact-us__form .form__group {
     margin-bottom: 2rem; }
-    .form-container__form-group label {
+    .form-container__form-group label, .contact-us__form .form__group label {
       font-size: 1.4rem;
       font-weight: 500;
       display: inline-block;
       margin-bottom: 0.5rem; }
-    .form-container__form-group input {
+    .form-container__form-group input, .contact-us__form .form__group input {
       display: block;
       width: 100%;
       height: calc(1.5em + 0.94rem + 2px);
@@ -886,7 +956,7 @@ a {
       border: 1px solid #ced4da;
       border-radius: 0.25rem;
       transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out; }
-      .form-container__form-group input:focus {
+      .form-container__form-group input:focus, .contact-us__form .form__group input:focus {
         outline: none; }
   .form-container__custom-checkbox {
     position: relative;
@@ -973,6 +1043,12 @@ a {
 .d-flex {
   display: flex !important; }
 
+.d-fl-col {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: flex-start !important;
+  align-items: start; }
+
 .justify-content-between {
   justify-content: space-between !important; }
 
@@ -986,6 +1062,15 @@ a {
   text-transform: uppercase;
   font-weight: 600;
   font-size: 2rem !important; }
+
+.pd-2 {
+  padding: 2rem !important; }
+
+.e-width {
+  width: 35rem !important; }
+
+.m-0 {
+  margin: 0 !important; }
 
 .mt-1 {
   margin-top: 1rem !important; }
@@ -1007,6 +1092,9 @@ a {
   @media (max-width: 768px) {
     .ml {
       margin-left: 0; } }
+
+.mr-2 {
+  margin-right: 2rem !important; }
 
 .text-center {
   text-align: center; }

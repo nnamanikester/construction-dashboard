@@ -24,7 +24,7 @@
     <link href="../css/style.css" type="text/css" rel="stylesheet" />
     <title>Homepage</title>
   </head>
-  <body>
+  <body class="js--scroll-top">
     <header class="homepage__header">
       <nav class="homepage-nav max-width">
         <div class="homepage-nav__brand">
@@ -33,19 +33,27 @@
 
         <ul class="homepage-nav__list">
           <li class="homepage-nav__item">
-            <a href="#" class="homepage-nav__link">Home</a>
+            <a href="#intro" class="homepage-nav__link">Home</a>
           </li>
 
           <li class="homepage-nav__item">
-            <a href="#" class="homepage-nav__link">About</a>
+            <a href="#about" class="homepage-nav__link">About</a>
           </li>
 
           <li class="homepage-nav__item">
-            <a href="#" class="homepage-nav__link">Services</a>
+            <a href="#services" class="homepage-nav__link">Services</a>
           </li>
 
           <li class="homepage-nav__item">
-            <a href="#" class="homepage-nav__link">Contact</a>
+            <a href="#contact-us" class="homepage-nav__link">Contact</a>
+          </li>
+
+          <li class="homepage-nav__item">
+            <a href="#" class="homepage-nav__signup">Sign up</a>
+          </li>
+
+          <li class="homepage-nav__item">
+            <a href="#" class="homepage-nav__login">Login</a>
           </li>
         </ul>
       </nav>
@@ -60,22 +68,30 @@
 
         <!-- Mobile Menu -->
         <div class="homepage__mobile-menu">
-          <a href="#" class="homepage__menu-link">Home </a>
-          <a href="#" class="homepage__menu-link">
+          <a href="#intro" class="homepage__menu-link">Home </a>
+          <a href="#about" class="homepage__menu-link">
             About
           </a>
-          <a href="#" class="homepage__menu-link">
+          <a href="#services" class="homepage__menu-link">
             Services
           </a>
-          <a href="#" class="homepage__menu-link">
+          <a href="#contact-us" class="homepage__menu-link">
             Contact
+          </a>
+
+          <a href="#" class="homepage__menu-link">
+            Sign up
+          </a>
+
+          <a href="#" class="homepage__menu-link">
+            Login
           </a>
         </div>
       </div>
     </header>
 
     <main class="main">
-      <section class="section intro-section">
+      <section class="section intro-section" id="intro">
         <!-- Intro section -->
         <div class="row max-width">
           <div class="col-1-of-2">
@@ -88,7 +104,15 @@
                 nisi ut aliquip ex ea commodo consequat.
               </p>
 
-              <button class="intro__copy-cta">Learn More</button>
+              <button class="intro__copy-cta">
+                <img src="../img/play-store.png" alt="play store" />
+              </button>
+              <button class="intro__copy-cta">
+                <img src="../img/Apple.png" alt="Apple Store" />
+              </button>
+              <button class="intro__copy-cta">
+                <img src="../img/microsoft store.png" alt="Microsoft Store" />
+              </button>
             </div>
           </div>
 
@@ -102,7 +126,10 @@
         </div>
       </section>
 
-      <section class="section services-section">
+      <section
+        class="section services-section js--section-services"
+        id="services"
+      >
         <div class="services__features">
           <h1 class="services__heading">Our Services</h1>
           <p class="services__subtitle">
@@ -154,7 +181,7 @@
         </div>
       </section>
 
-      <section class="section about-section">
+      <section class="section about-section" id="about">
         <!-- About section -->
         <div class="row max-width">
           <div class="about-us">
@@ -262,18 +289,77 @@
         </div>
       </section>
 
-      <!-- 
-        <section class="section contact-section">
-           Contact Section
-        </section>
+      <section class="section contact-us-section" id="contact-us">
+        <div class="contact-us">
+          <h1 class="contact-us__heading">Get in Touch</h1>
+          <p class="contact-us__subtitle">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+            voluptas hic id aspernatur ut ea delectus, quisquam suscipit saepe
+            facilis itaque accusamus est facere.
+          </p>
+        </div>
 
-       -->
+        <!-- Row starts here -->
+        <div class="row">
+          <form action="#" method="POST" class="contact-us__form bg-ng">
+            <div class="form__group">
+              <label for="name">Full Name</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Full Name"
+                autocomplete="off"
+              />
+            </div>
+
+            <div class="form__group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email"
+                autocomplete="off"
+              />
+            </div>
+
+            <div class="form__group">
+              <label for="message">Your Message</label>
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+                placeholder="Leave a Message"
+              >
+              </textarea>
+            </div>
+
+            <input type="button" value="Send" class="contact-us__btn" />
+          </form>
+        </div>
+        <!-- Row end here -->
+      </section>
     </main>
+
+    <div class="js--scroll-topbtn scroll-topbtn">
+      <i class="bx bxs-chevron-up"></i>
+    </div>
 
     <footer class="footer">
       <!-- Footer -->
       <div class="row">
         <div class="footer__content">
+          <div class="footer__logo">
+            <img src="../img/logo-dark.png" alt="footer logo" />
+          </div>
+
+          <p class="footer__desc">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+
           <ul class="footer__list">
             <li class="footer__item">
               <a href="#" class="footer__link">Home</a>
@@ -282,18 +368,12 @@
               <a href="#" class="footer__link">About</a>
             </li>
             <li class="footer__item">
-              <a href="#" class="footer__link">Services</a>
+              <a href="#" class="footer__link">Term & Conditions</a>
             </li>
             <li class="footer__item">
               <a href="#" class="footer__link">Contact</a>
             </li>
           </ul>
-
-          <p class="footer__desc">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam.
-          </p>
 
           <p class="footer__copyright">
             Construction Dashboard Homepage. &copy;CopyRight 2020 All right
@@ -302,5 +382,10 @@
         </div>
       </div>
     </footer>
+
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../js/jquery.waypoints.min.js"></script>
+    <script src="../js/script.js"></script>
   </body>
 </html>

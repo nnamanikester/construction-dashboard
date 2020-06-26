@@ -8,6 +8,12 @@
     margin: 0 auto;
   }
 
+  &__logo {
+    width: 5.5rem;
+    height: 5.5rem;
+    margin: 2rem auto;
+  }
+
   &__list {
     list-style: none;
     display: flex;
@@ -16,7 +22,9 @@
   }
 
   &__item {
-    margin: 2rem;
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
   }
 
   &__link {

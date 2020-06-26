@@ -21,10 +21,10 @@
   }
 
   &__toggle {
-    font-size: 5rem;
+    font-size: 4.2rem;
     color: $color-white;
     position: absolute;
-    top: 1rem;
+    top: 1.5rem;
     right: 4rem;
   }
 
@@ -34,7 +34,7 @@
 
   &__menu-link {
     display: block;
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     margin: 3rem;
     color: $color-lightblue;
   }
@@ -156,16 +156,16 @@
 
   &__copy-cta {
     display: inline-block;
-    font-size: 1.6rem;
-    padding: 1.2rem 2.5rem;
+    width: 15rem;
     border: none;
     cursor: pointer;
     color: $color-white;
-    background-color: $color-darkblue;
 
     @include respond(lg-tab) {
-      font-size: 1.4rem;
-      margin-bottom: 4rem;
+      width: 12rem;
+      &:last-child {
+        margin-bottom: 4rem;
+      }
     }
   }
 
@@ -381,5 +381,83 @@
     @include respond(tab) {
       margin-right: 2rem;
     }
+  }
+}
+
+// GET IN TOUCH SECTION
+.contact-us-section {
+  background-image: linear-gradient(#232a40ea, #232a40ea),
+    url(../img/3992522.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.contact-us {
+  @extend .testimonies__features;
+
+  &__heading {
+    @extend .testimonies__heading;
+    color: $color-white;
+  }
+
+  &__subtitle {
+    @extend .testimonies__subtitle;
+    color: $color-white;
+  }
+
+  &__form {
+    @extend .form-container;
+
+    .form__group {
+      @extend .form-container__form-group;
+
+      label {
+        display: inline-block;
+        color: $color-white;
+      }
+
+      textarea {
+        width: 100%;
+        font-size: inherit;
+        color: $color-darkblue;
+        outline: none;
+        padding: 1rem;
+        border-radius: 0.5rem;
+      }
+    }
+  }
+
+  &__btn {
+    display: inline-block;
+    font-size: 1.4rem;
+    border: 1.5px solid $color-white;
+    background-color: $color-darkblue;
+    color: $color-white;
+    width: 12rem;
+    padding: 1rem 2.3rem;
+    cursor: pointer;
+    outline: none;
+    margin-bottom: 4rem;
+  }
+}
+
+//SCROLL TOP BTN
+
+.scroll-topbtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  position: fixed;
+  bottom: 4rem;
+  right: 4rem;
+  border: 2px solid $color-grey;
+  border-radius: 50%;
+  cursor: pointer;
+
+  i {
+    font-size: 3.2rem;
+    color: $color-grey;
   }
 }
