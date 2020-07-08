@@ -1,242 +1,734 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Google fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,300&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Icon font -->
-    <link
-      href="https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css"
-      rel="stylesheet"
-    />
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <!-- Google fonts -->
+      <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,300&display=swap"
+        rel="stylesheet"
+      />
+      <!-- Icon font -->
+      <link
+        href="https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css"
+        rel="stylesheet"
+      />
 
-    <!-- CSS Styles -->
-    <link href="../css/style.css" type="text/css" rel="stylesheet" />
-    <title>Construction Dashboard</title>
-  </head>
+      <!-- CSS Styles -->
+      <link href="../css/style.css" type="text/css" rel="stylesheet" />
+      <title>Construction Dashboard</title>
+    </head>
+    <body>
+      <!-- Page begins -->
+      <nav class="nav">
+        <div class="nav__mobile-view">
+          <!-- Mobile Hamburger menu toggle bottom -->
 
-  <body>
-    <!-- Page begins -->
-    <nav class="nav">
-      <div class="nav__mobile-view">
-        <!-- Mobile Hamburger menu toggle bottom -->
+          <label for="toggle" class="toggle"><i class="bx bx-menu"></i></label>
+          <input type="checkbox" id="toggle" />
 
-        <label for="toggle" class="toggle"><i class="bx bx-menu"></i></label>
-        <input type="checkbox" id="toggle" />
-
-        <!-- Mobile Menu -->
-        <div class="nav__mobile-menu">
-          <h3 class="nav__menu-heading">MENU</h3>
-          <a href="#" class="nav__menu-link">
-            <i class="bx bx-home-circle nav__menu-icon"></i>
-            <span class="nav__menu-title">Dashboard</span>
-          </a>
-          <a href="#" class="nav__menu-link">
-            <i class="bx bx-log-in-circle"></i>
-            <span class="nav__menu-title">Invertory Logging</span>
-          </a>
-          <a href="#" class="nav__menu-link">
-            <i class="bx bx-layer"></i>
-            <span class="nav__menu-title">Progress Report</span>
-          </a>
-          <a href="#" class="nav__menu-link">
-            <i class="bx bx-task"></i>
-            <span class="nav__menu-title">Store Instructions</span>
-          </a>
-          <a href="#" class="nav__menu-link">
-            <i class="bx bx-share-alt"></i>
-            <span class="nav__menu-title">Share Photos</span>
-          </a>
-          <a href="#" class="nav__menu-link">
-            <i class="bx bx-notepad"></i>
-            <span class="nav__menu-title">Send & Review R.F.I</span>
-          </a>
-          <a href="#" class="nav__menu-link">
-            <i class="bx bx-mobile-landscape"></i>
-            <span class="nav__menu-title">Monitor Invertory</span>
-          </a>
-        </div>
-
-        <input
-          type="text"
-          id="search"
-          placeholder="Search"
-          autocomplete="off"
-        />
-
-        <div class="mobile-menu-icon">
-          <label for="search"><i class="bx bx-search-alt"></i></label>
-          <label class="nav__notification"><i class="bx bx-bell"></i></label>
-          <label id="user-photo"
-            ><img
-              src="../img/foto-sushi-6anudmpILw4-unsplash.jpg"
-              alt="user-photo"
-          /></label>
-          <label class="nav__settings"><i class="bx bx-cog"></i></label>
-        </div>
-      </div>
-    </nav>
-    <div class="top-page">
-      <header class="header">
-        <nav class="nav-header">
-          <div class="nav-header__d-flex">
-            <div class="nav-header__brand">
-              <div class="nav-header__logo">
-                <i class="bx bxl-slack-old"></i>
-              </div>
-            </div>
-            <form action="" method="" class="nav-header__form">
-              <input
-                type="text"
-                class="nav-header__search"
-                name="search"
-                placeholder="Search..."
-                autocomplete="off"
-              />
-              <i class="bx bx-search-alt search-icon"></i>
-            </form>
-            <div class="nav-header__dropdown">
-              <span>Mega menu</span>
-            </div>
+          <!-- Mobile Menu -->
+          <div class="nav__mobile-menu">
+            <h3 class="nav__menu-heading">MENU</h3>
+            <a href="#" class="nav__menu-link">
+              <i class="bx bx-home-circle nav__menu-icon"></i>
+              <span class="nav__menu-title">Dashboard</span>
+            </a>
+            <a href="#" class="nav__menu-link">
+              <i class="bx bx-log-in-circle"></i>
+              <span class="nav__menu-title">Invertory Logging</span>
+            </a>
+            <a href="#" class="nav__menu-link">
+              <i class="bx bx-layer"></i>
+              <span class="nav__menu-title">Projects</span>
+            </a>
+            <a href="#" class="nav__menu-link">
+              <i class="bx bx-task"></i>
+              <span class="nav__menu-title">Store Instructions</span>
+            </a>
+            <a href="#" class="nav__menu-link">
+              <i class="bx bx-share-alt"></i>
+              <span class="nav__menu-title">Share Photos</span>
+            </a>
+            <a href="#" class="nav__menu-link">
+              <i class="bx bx-notepad"></i>
+              <span class="nav__menu-title">Send & Review R.F.I</span>
+            </a>
+            <a href="#" class="nav__menu-link">
+              <i class="bx bx-mobile-landscape"></i>
+              <span class="nav__menu-title">Monitor Invertory</span>
+            </a>
           </div>
-          <div class="nav-header__d-flex">
-            <span class="nav-header__searchicon"
-              ><i class="bx bx-search-alt"></i
-            ></span>
-            <span class="nav-header__customize"
-              ><i class="bx bx-plus"></i
-            ></span>
-            <span class="nav-header__multiple"
-              ><i class="bx bxs-select-multiple"></i
-            ></span>
-            <span class="nav-header__notification"
-              ><i class="bx bx-bell"></i
-            ></span>
-            <span class="nav-header__user-photo"
+
+          <input
+            type="text"
+            id="search"
+            placeholder="Search"
+            autocomplete="off"
+          />
+
+          <div class="mobile-menu-icon">
+            <label for="search"><i class="bx bx-search-alt"></i></label>
+            <label class="nav__notification"><i class="bx bx-bell"></i></label>
+            <label id="user-photo"
               ><img
                 src="../img/foto-sushi-6anudmpILw4-unsplash.jpg"
                 alt="user-photo"
-            /></span>
-            <span class="nav-header__user">John Doe</span>
-            <span class="nav-header__settings"><i class="bx bx-cog"></i></span>
+            /></label>
+            <label class="nav__settings"><i class="bx bx-cog"></i></label>
           </div>
-        </nav>
-      </header>
-      <!-- Header ends here -->
-    </div>
-
-    <!-- Vertical Menu & Main Content -->
-    <div class="content">
-      <nav class="content__vertical-menu">
-        <h3 class="content__vertical-menu-heading">MENU</h3>
-        <ul class="content__vertical-menu-list">
-          <li class="content__vertical-menu-item">
-            <i class="bx bx-home-circle"></i>
-            <a href="../index.html">
-              <span class="content__vertical-menu-title">Overview</span>
-            </a>
-          </li>
-          <li class="content__vertical-menu-item">
-            <i class="bx bx-log-in-circle"></i>
-            <a href="./inventory.html">
-              <span class="content__vertical-menu-title"
-                >Invertory Logging</span
-              >
-            </a>
-          </li>
-          <li class="content__vertical-menu-item">
-            <i class="bx bx-layer"></i>
-            <a href="./projects.html">
-              <span class="content__vertical-menu-title">Progress Report</span>
-            </a>
-          </li>
-          <li class="content__vertical-menu-item">
-            <i class="bx bx-task"></i>
-            <a href="./task.html">
-              <span class="content__vertical-menu-title"
-                >Store Instructions</span
-              >
-            </a>
-          </li>
-          <li class="content__vertical-menu-item">
-            <i class="bx bx-share-alt"></i>
-            <a href="./share.html">
-              <span class="content__vertical-menu-title">Share Photos</span>
-            </a>
-          </li>
-          <li class="content__vertical-menu-item">
-            <i class="bx bx-notepad"></i>
-            <a href="./chat.html">
-              <span class="content__vertical-menu-title"
-                >Send & Review R.F.I</span
-              >
-            </a>
-          </li>
-          <li class="content__vertical-menu-item">
-            <i class="bx bx-mobile"></i>
-            <a href="./monitor.html">
-              <span class="content__vertical-menu-title"
-                >Monitor Invertory</span
-              >
-            </a>
-          </li>
-        </ul>
+        </div>
       </nav>
-      <!-- Vertical Menu End Here -->
+      <div class="top-page">
+        <header class="header">
+          <nav class="nav-header">
+            <div class="nav-header__d-flex">
+              <div class="nav-header__brand">
+                <div class="nav-header__logo">
+                  <i class="bx bxl-slack-old"></i>
+                </div>
+              </div>
+              <form action="" method="" class="nav-header__form">
+                <input
+                  type="text"
+                  class="nav-header__search"
+                  name="search"
+                  placeholder="Search..."
+                  autocomplete="off"
+                />
+                <i class="bx bx-search-alt search-icon"></i>
+              </form>
+              <div class="nav-header__dropdown">
+                <span>Mega menu</span>
+              </div>
+            </div>
+            <div class="nav-header__d-flex">
+              <span class="nav-header__searchicon"
+                ><i class="bx bx-search-alt"></i
+              ></span>
+              <span class="nav-header__customize"
+                ><i class="bx bx-plus"></i
+              ></span>
+              <span class="nav-header__multiple"
+                ><i class="bx bxs-select-multiple"></i
+              ></span>
+              <span class="nav-header__notification"
+                ><i class="bx bx-bell"></i
+              ></span>
+              <span class="nav-header__user-photo"
+                ><img
+                  src="../img/foto-sushi-6anudmpILw4-unsplash.jpg"
+                  alt="user-photo"
+              /></span>
+              <span class="nav-header__user">John Doe</span>
+              <span class="nav-header__settings"
+                ><i class="bx bx-cog"></i
+              ></span>
+            </div>
+          </nav>
+        </header>
+      </div>
 
-      <!-- Main Content start Here -->
-      <main class="content__main">
-        <!-- row begins here -->
-        <div class="row">
-          <div class="col-12">
-            <div
-              class="page-title-box d-flex align-items-center justify-content-between"
-            >
-              <h4 class="mb-0 font-size-18">Projects</h4>
+      <div class="content">
+        <nav class="content__vertical-menu">
+          <h3 class="content__vertical-menu-heading">MENU</h3>
+          <ul class="content__vertical-menu-list">
+            <li class="content__vertical-menu-item">
+              <i class="bx bx-home-circle"></i>
+              <a href="../index.html">
+                <span class="content__vertical-menu-title">Overview</span>
+              </a>
+            </li>
+            <li class="content__vertical-menu-item">
+              <i class="bx bx-log-in-circle"></i>
+              <a href="./inventory.html">
+                <span class="content__vertical-menu-title"
+                  >Invertory Logging</span
+                >
+              </a>
+            </li>
+            <li class="content__vertical-menu-item">
+              <i class="bx bx-layer"></i>
+              <a href="./projects.html">
+                <span class="content__vertical-menu-title">Projects</span>
+              </a>
+            </li>
+            <li class="content__vertical-menu-item">
+              <i class="bx bx-task"></i>
+              <a href="./task.html">
+                <span class="content__vertical-menu-title"
+                  >Store Instructions</span
+                >
+              </a>
+            </li>
+            <li class="content__vertical-menu-item">
+              <i class="bx bx-share-alt"></i>
+              <a href="./share.html">
+                <span class="content__vertical-menu-title">Share Photos</span>
+              </a>
+            </li>
+            <li class="content__vertical-menu-item">
+              <i class="bx bx-notepad"></i>
+              <a href="./chat.html">
+                <span class="content__vertical-menu-title"
+                  >Send & Review R.F.I</span
+                >
+              </a>
+            </li>
+            <li class="content__vertical-menu-item">
+              <i class="bx bx-mobile"></i>
+              <a href="./monitor.html">
+                <span class="content__vertical-menu-title"
+                  >Monitor Invertory</span
+                >
+              </a>
+            </li>
+          </ul>
+        </nav>
 
-              <div class="page-title-right">
-                <ol class="breadcrumb">
-                  <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
-                  <li class="breadcrumb-item active">Projects</li>
-                </ol>
+        <!-- main section begins here -->
+        <main class="content__main">
+          <!-- row begins here -->
+          <div class="row">
+            <div class="col-12">
+              <div
+                class="page-title-box d-flex align-items-center justify-content-between"
+              >
+                <h4 class="mb-0 font-size-18">Invertory Logging</h4>
+
+                <div class="page-title-right">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Invertory</a></li>
+                    <li class="breadcrumb-item active">Invertory Logging</li>
+                  </ol>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <!-- row ends here -->
+          <!-- row ends here -->
 
-        <!-- Row Start Here -->
-        <div class="row">
-          <div class="col-12">
-            <div class="card d-flex pd-2">
-              <div class="card__img m-0 mr-2 e-width">
-                <img src="../img/logo.png" alt="Project Photo" />
+          <!-- row starts here -->
+          <div class="row">
+            <!-- Column 3 of 4 start here -->
+            <div class="col-3-of-4">
+              <div class="card mb-2">
+                <div class="card__body text-center">
+                  <div class="card__img mb-2">
+                    <img src="../img/logo-dark.png" alt="Project Photo" />
+                  </div>
+
+                  <h2 class="card__title-1 mb-2">
+                    Odin Sure Shopping Mall & Duplex
+                  </h2>
+                  <p class="card-desc">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam.
+                  </p>
+                </div>
               </div>
-              <div class="card__details d-fl-col">
-                <h2 class="card__title-1">First Rate Choice</h2>
-                <h3 class="card__title-2--lit mb-1">
-                  California, Los Angeles, 3138 Doctors Drive
-                </h3>
-                <p class="card__desc">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Voluptatem hic fugiat rerum adipisci eligendi distinctio
-                  accusamus, molestias laboriosam voluptatibus magni, illo velit
-                  consectetur atque reprehenderit porro voluptate voluptates
-                  quis ex?
-                </p>
+
+              <!-- Card grid -->
+              <div class="card bg-ng mb-2">
+                <div class="row">
+                  <div class="col-1-of-3">
+                    <div class="card">
+                      <div class="card__details">
+                        <div class="card__avatar--mdr align-self">
+                          <img src="../img/logo-dark.png" alt="project photo" />
+                        </div>
+                        <div>
+                          <h2 class="card__title-2 mb-1">Project Name</h2>
+                          <p class="card__desc--lit mb-1">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="card__bottom mt-1">
+                        <ul class="card__list--sm">
+                          <li class="card__item--sm">
+                            <span class="badge badge-soft-primary"
+                              >Completed</span
+                            >
+                          </li>
+                          <li class="card__item--sm">
+                            <span class="badge"
+                              ><i class="bx bx-calendar"></i>15th, June</span
+                            >
+                          </li>
+                          <li class="card__item--sm">
+                            <span class="badge"
+                              ><i class="bx bx-message"></i>23</span
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-1-of-3">
+                    <div class="card">
+                      <div class="card__details">
+                        <div class="card__avatar--mdr align-self">
+                          <img src="../img/logo-dark.png" alt="project photo" />
+                        </div>
+                        <div>
+                          <h2 class="card__title-2 mb-1">Project Name</h2>
+                          <p class="card__desc--lit mb-1">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="card__bottom mt-1">
+                        <ul class="card__list--sm">
+                          <li class="card__item--sm">
+                            <span class="badge badge-soft-danger">Delay</span>
+                          </li>
+                          <li class="card__item--sm">
+                            <span class="badge"
+                              ><i class="bx bx-calendar"></i>15th, June</span
+                            >
+                          </li>
+                          <li class="card__item--sm">
+                            <span class="badge"
+                              ><i class="bx bx-message"></i>23</span
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-1-of-3">
+                    <div class="card">
+                      <div class="card__details">
+                        <div class="card__avatar--mdr align-self">
+                          <img src="../img/logo-dark.png" alt="project photo" />
+                        </div>
+                        <div>
+                          <h2 class="card__title-2 mb-1">Project Name</h2>
+                          <p class="card__desc--lit mb-1">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="card__bottom mt-1">
+                        <ul class="card__list--sm">
+                          <li class="card__item--sm">
+                            <span class="badge badge-soft-warning"
+                              >In Progress</span
+                            >
+                          </li>
+                          <li class="card__item--sm">
+                            <span class="badge"
+                              ><i class="bx bx-calendar"></i>15th, June</span
+                            >
+                          </li>
+                          <li class="card__item--sm">
+                            <span class="badge"
+                              ><i class="bx bx-message"></i>23</span
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card Grid Start here -->
+
+              <div class="card bg-ng mb-2">
+                <div class="row">
+                  <div class="col-1-of-3">
+                    <div class="card">
+                      <div class="card__details">
+                        <div class="card__avatar--mdr align-self">
+                          <img src="../img/logo-dark.png" alt="project photo" />
+                        </div>
+                        <div>
+                          <h2 class="card__title-2 mb-1">Project Name</h2>
+                          <p class="card__desc--lit mb-1">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="card__bottom mt-1">
+                        <ul class="card__list--sm">
+                          <li class="card__item--sm">
+                            <span class="badge badge-soft-primary"
+                              >Completed</span
+                            >
+                          </li>
+                          <li class="card__item--sm">
+                            <span class="badge"
+                              ><i class="bx bx-calendar"></i>15th, June</span
+                            >
+                          </li>
+                          <li class="card__item--sm">
+                            <span class="badge"
+                              ><i class="bx bx-message"></i>23</span
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-1-of-3">
+                    <div class="card">
+                      <div class="card__details">
+                        <div class="card__avatar--mdr align-self">
+                          <img src="../img/logo-dark.png" alt="project photo" />
+                        </div>
+                        <div>
+                          <h2 class="card__title-2 mb-1">Project Name</h2>
+                          <p class="card__desc--lit mb-1">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="card__bottom mt-1">
+                        <ul class="card__list--sm">
+                          <li class="card__item--sm">
+                            <span class="badge badge-soft-danger">Delay</span>
+                          </li>
+                          <li class="card__item--sm">
+                            <span class="badge"
+                              ><i class="bx bx-calendar"></i>15th, June</span
+                            >
+                          </li>
+                          <li class="card__item--sm">
+                            <span class="badge"
+                              ><i class="bx bx-message"></i>23</span
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-1-of-3">
+                    <div class="card">
+                      <div class="card__details">
+                        <div class="card__avatar--mdr align-self">
+                          <img src="../img/logo-dark.png" alt="project photo" />
+                        </div>
+                        <div>
+                          <h2 class="card__title-2 mb-1">Project Name</h2>
+                          <p class="card__desc--lit mb-1">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="card__bottom mt-1">
+                        <ul class="card__list--sm">
+                          <li class="card__item--sm">
+                            <span class="badge badge-soft-warning"
+                              >In Progress</span
+                            >
+                          </li>
+                          <li class="card__item--sm">
+                            <span class="badge"
+                              ><i class="bx bx-calendar"></i>15th, June</span
+                            >
+                          </li>
+                          <li class="card__item--sm">
+                            <span class="badge"
+                              ><i class="bx bx-message"></i>23</span
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card grid starts here -->
+
+              <div class="card bg-ng mb-2">
+                <div class="row">
+                  <div class="col-1-of-3">
+                    <div class="card">
+                      <div class="card__details">
+                        <div class="card__avatar--mdr align-self">
+                          <img src="../img/logo-dark.png" alt="project photo" />
+                        </div>
+                        <div>
+                          <h2 class="card__title-2 mb-1">Project Name</h2>
+                          <p class="card__desc--lit mb-1">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="card__bottom mt-1">
+                        <ul class="card__list--sm">
+                          <li class="card__item--sm">
+                            <span class="badge badge-soft-primary"
+                              >Completed</span
+                            >
+                          </li>
+                          <li class="card__item--sm">
+                            <span class="badge"
+                              ><i class="bx bx-calendar"></i>15th, June</span
+                            >
+                          </li>
+                          <li class="card__item--sm">
+                            <span class="badge"
+                              ><i class="bx bx-message"></i>23</span
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-1-of-3">
+                    <div class="card">
+                      <div class="card__details">
+                        <div class="card__avatar--mdr align-self">
+                          <img src="../img/logo-dark.png" alt="project photo" />
+                        </div>
+                        <div>
+                          <h2 class="card__title-2 mb-1">Project Name</h2>
+                          <p class="card__desc--lit mb-1">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="card__bottom mt-1">
+                        <ul class="card__list--sm">
+                          <li class="card__item--sm">
+                            <span class="badge badge-soft-danger">Delay</span>
+                          </li>
+                          <li class="card__item--sm">
+                            <span class="badge"
+                              ><i class="bx bx-calendar"></i>15th, June</span
+                            >
+                          </li>
+                          <li class="card__item--sm">
+                            <span class="badge"
+                              ><i class="bx bx-message"></i>23</span
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-1-of-3">
+                    <div class="card">
+                      <div class="card__details">
+                        <div class="card__avatar--mdr align-self">
+                          <img src="../img/logo-dark.png" alt="project photo" />
+                        </div>
+                        <div>
+                          <h2 class="card__title-2 mb-1">Project Name</h2>
+                          <p class="card__desc--lit mb-1">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="card__bottom mt-1">
+                        <ul class="card__list--sm">
+                          <li class="card__item--sm">
+                            <span class="badge badge-soft-warning"
+                              >In Progress</span
+                            >
+                          </li>
+                          <li class="card__item--sm">
+                            <span class="badge"
+                              ><i class="bx bx-calendar"></i>15th, June</span
+                            >
+                          </li>
+                          <li class="card__item--sm">
+                            <span class="badge"
+                              ><i class="bx bx-message"></i>23</span
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Column 3 of 4 end here -->
+
+            <div class="col-1-of-4">
+              <div class="card">
+                <h2 class="card__title-2 mb-2">Contacts</h2>
+
+                <!-- Contacts Details -->
+                <ul class="card__list--fl-dr">
+                  <li class="card__item--fl-dr">
+                    <div>
+                      <span class="card__avatar--xs">
+                        <img
+                          src="../img/foto-sushi-6anudmpILw4-unsplash.jpg"
+                          alt="user-photo"
+                        />
+                      </span>
+                    </div>
+                    <div class="card__info">
+                      <span class="card__user-name">John Doe</span>
+                      <span class="card__user-number">+234 803 239 4565</span>
+                    </div>
+                  </li>
+
+                  <li class="card__item--fl-dr">
+                    <div>
+                      <span class="card__avatar--xs">
+                        <img
+                          src="../img/foto-sushi-6anudmpILw4-unsplash.jpg"
+                          alt="user-photo"
+                        />
+                      </span>
+                    </div>
+                    <div class="card__info">
+                      <span class="card__user-name">John Doe</span>
+                      <span class="card__user-number">+234 803 239 4565</span>
+                    </div>
+                  </li>
+
+                  <li class="card__item--fl-dr">
+                    <div>
+                      <span class="card__avatar--xs">
+                        <img
+                          src="../img/foto-sushi-6anudmpILw4-unsplash.jpg"
+                          alt="user-photo"
+                        />
+                      </span>
+                    </div>
+                    <div class="card__info">
+                      <span class="card__user-name">John Doe</span>
+                      <span class="card__user-number">+234 803 239 4565</span>
+                    </div>
+                  </li>
+
+                  <li class="card__item--fl-dr">
+                    <div>
+                      <span class="card__avatar--xs">
+                        <img
+                          src="../img/foto-sushi-6anudmpILw4-unsplash.jpg"
+                          alt="user-photo"
+                        />
+                      </span>
+                    </div>
+                    <div class="card__info">
+                      <span class="card__user-name">John Doe</span>
+                      <span class="card__user-number">+234 803 239 4565</span>
+                    </div>
+                  </li>
+
+                  <li class="card__item--fl-dr">
+                    <div>
+                      <span class="card__avatar--xs">
+                        <img
+                          src="../img/foto-sushi-6anudmpILw4-unsplash.jpg"
+                          alt="user-photo"
+                        />
+                      </span>
+                    </div>
+                    <div class="card__info">
+                      <span class="card__user-name">John Doe</span>
+                      <span class="card__user-number">+234 803 239 4565</span>
+                    </div>
+                  </li>
+
+                  <li class="card__item--fl-dr">
+                    <div>
+                      <span class="card__avatar--xs">
+                        <img
+                          src="../img/foto-sushi-6anudmpILw4-unsplash.jpg"
+                          alt="user-photo"
+                        />
+                      </span>
+                    </div>
+                    <div class="card__info">
+                      <span class="card__user-name">John Doe</span>
+                      <span class="card__user-number">+234 803 239 4565</span>
+                    </div>
+                  </li>
+
+                  <li class="card__item--fl-dr">
+                    <div>
+                      <span class="card__avatar--xs">
+                        <img
+                          src="../img/foto-sushi-6anudmpILw4-unsplash.jpg"
+                          alt="user-photo"
+                        />
+                      </span>
+                    </div>
+                    <div class="card__info">
+                      <span class="card__user-name">John Doe</span>
+                      <span class="card__user-number">+234 803 239 4565</span>
+                    </div>
+                  </li>
+
+                  <li class="card__item--fl-dr">
+                    <div>
+                      <span class="card__avatar--xs">
+                        <img
+                          src="../img/foto-sushi-6anudmpILw4-unsplash.jpg"
+                          alt="user-photo"
+                        />
+                      </span>
+                    </div>
+                    <div class="card__info">
+                      <span class="card__user-name">John Doe</span>
+                      <span class="card__user-number">+234 803 239 4565</span>
+                    </div>
+                  </li>
+
+                  <li class="card__item--fl-dr">
+                    <div>
+                      <span class="card__avatar--xs">
+                        <img
+                          src="../img/foto-sushi-6anudmpILw4-unsplash.jpg"
+                          alt="user-photo"
+                        />
+                      </span>
+                    </div>
+                    <div class="card__info">
+                      <span class="card__user-name">John Doe</span>
+                      <span class="card__user-number">+234 803 239 4565</span>
+                    </div>
+                  </li>
+
+                  <li class="card__item--fl-dr">
+                    <div>
+                      <span class="card__avatar--xs">
+                        <img
+                          src="../img/foto-sushi-6anudmpILw4-unsplash.jpg"
+                          alt="user-photo"
+                        />
+                      </span>
+                    </div>
+                    <div class="card__info">
+                      <span class="card__user-name">John Doe</span>
+                      <span class="card__user-number">+234 803 239 4565</span>
+                    </div>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
-        </div>
-        <!-- Row ends here -->
+          <!-- row end here -->
+        </main>
+      </div>
 
-        <!-- Table Start here -->
-        <!-- Table End here -->
-      </main>
-    </div>
-  </body>
+      <footer class="footer">
+        <div class="footer__body ml">
+          Development by Whitegod Kingsley & Kester
+        </div>
+      </footer>
+    </body>
+  </html>
 </html>
