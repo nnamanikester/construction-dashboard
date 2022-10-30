@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/nnamanikester/construction-dashboard#readme",
   "devDependencies": {
-    "browser-sync": "^2.26.7",
+    "browser-sync": "^2.27.10",
     "node-sass": "^4.14.1",
     "nodemon": "^2.0.4"
   },
